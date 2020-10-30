@@ -99,7 +99,7 @@
 
                     <div class="row no-gutters">
                         <div class="col pb-3">
-                            @livewire('formulir-kontak')
+                            <livewire:formulir-kontak />
                         </div>
                     </div>
                 </div>

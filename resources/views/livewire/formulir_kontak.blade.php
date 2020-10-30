@@ -16,15 +16,13 @@
         @error('pesan') <div class="p-3 mb-2 bg-danger text-white">{{ $message }}</div> @enderror
     </div>
     <button type="submit" class="btn btn-success mb-3">Kirim</button>
-
     <div>
         @if (session()->has('message'))
             <div class="p-3 mb-2 bg-success text-white">{{ session('message') }}</div>
             <script>
-                var all = document.getElementsByClassName('form_group');
-                for (var i = 0; i < all.length; i++) {
-                    all[i].style.display = 'none';
-                }
+                $('.form-group').empty();
+                $('input[name="_token"]').remove();
+                $('button[type="submit"]').hide();
             </script>
         @endif
     </div>

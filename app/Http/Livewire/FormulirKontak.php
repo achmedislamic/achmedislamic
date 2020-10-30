@@ -36,4 +36,14 @@ class FormulirKontak extends Component
     {
         return view('livewire.formulir_kontak');
     }
+
+    public function getKontakProperty()
+    {
+        return Kontak::find(1);
+    }
+
+    public function hapus()
+    {
+        $this->kontak->delete();
+    }
 }
