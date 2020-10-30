@@ -77,4 +77,42 @@
             </div>
         </div>
     </div>
+
+    <svg fill="currentColor" viewBox="0 0 1695 57" class="text-info">
+        <path d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1c183.6-.1 344.5 7.3 482.8 22v34H0V23z"></path>
+    </svg>
+
+    <div class="container-fluid px-0 bg-info">
+        <div class="row no-gutters">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="pt-3"><strong>Kontak Saya!</strong></h2>
+                            <p>Ada proyek kerjasama, pertanyaan atau apapun itu? Kontak saya lewat email atau 
+                                mengisi formulir dibawah ini.
+                            </p>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="row no-gutters">
+                        <div class="col pb-3">
+                            @livewire('formulir-kontak')
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-4 bg-primary text-white py-4">
+        <div class="row">
+            <div class="col">
+                <strong><p>Situs ini Open Source. Anda bisa clone <a class="text-reset" href="https://github.com/achmedislamic/achmedislamic" target="_blank">repositorynya disini</a>.</p></strong>
+            </div>
+        </div>
+    </div>
 @endsection
