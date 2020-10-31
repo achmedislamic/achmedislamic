@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-
+    'failed' => 'Akun yang anda coba masuk tidak tersedia di database kami.',
+    'throttle' => 'Terlalu banyak percobaan masuk. Silahkan coba lagi :seconds detik.',
+    'remember' => 'Ingat Saya',
+    'forgot_password' => 'Lupa Password',
+    'login' => 'Masuk'
 ];

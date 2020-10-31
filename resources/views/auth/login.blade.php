@@ -37,7 +37,7 @@
                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                         <label class="form-check-label" for="remember">
-                            {{ __('Remember Me') }}
+                            @lang('auth.remember')
                         </label>
                     </div>
                 </div>
@@ -46,12 +46,12 @@
                     <div class="d-flex justify-content-end align-items-baseline">
                         @if (Route::has('password.request'))
                             <a class="text-muted mr-3" href="{{ route('password.request') }}">
-                                {{ __('Forgot your password?') }}
+                                @lang('auth.forgot_password')
                             </a>
                         @endif
 
                         <x-jet-button>
-                            {{ __('Login') }}
+                            @lang('auth.login')
                         </x-jet-button>
                     </div>
                 </div>
