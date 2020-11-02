@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-admin-layout>
     <x-slot name="header">
         <h2 class="h4 font-weight-bold">
             {{ __('Profile') }}
@@ -24,4 +24,4 @@
     <x-jet-section-border />
 
     @livewire('profile.delete-user-form')
-</x-app-layout>
+</x-admin-layout>
