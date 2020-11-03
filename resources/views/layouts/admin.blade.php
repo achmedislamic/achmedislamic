@@ -33,7 +33,11 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                            {{ __('Dashboard') }}
+                            {{ __('Beranda') }}
+                        </x-jet-nav-link>
+
+                        <x-jet-nav-link href="{{ route('proyek') }}" :active="request()->routeIs('proyek')">
+                            {{ __('Proyek') }}
                         </x-jet-nav-link>
                     </ul>
 
