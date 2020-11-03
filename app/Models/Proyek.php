@@ -9,6 +9,11 @@ class Proyek extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'judul',
+        'deskripsi'
+    ];
+    
     public function user()
     {
         return $this->belongsTo(User::class);

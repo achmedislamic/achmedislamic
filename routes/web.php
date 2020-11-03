@@ -16,3 +16,4 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/proyek', [ProyekController::class, 'index'])->name('proyek');
 Route::get('/proyek/tambah', [ProyekController::class, 'tambah'])->name('tambah_proyek');
+Route::get('/proyek/ubah/{proyek}', [ProyekController::class, 'ubah'])->name('ubah_proyek');

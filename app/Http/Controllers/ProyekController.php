@@ -30,17 +30,6 @@ class ProyekController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -57,9 +46,11 @@ class ProyekController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function ubah(Proyek $proyek)
     {
-        //
+        return view('proyek.tambah', [
+            'proyek' => $proyek
+        ]);
     }
 
     /**

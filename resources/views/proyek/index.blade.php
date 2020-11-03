@@ -21,6 +21,7 @@
                         <th>No.</th>
                         <th>Judul</th>
                         <th>Deskripsi</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,10 +33,13 @@
                             <td scope="row">{{ $no++ }}</td>
                             <td>{{ $proyek->judul }}</td>
                             <td>{{ $proyek->deskripsi }}</td>
+                            <td>
+                            <a href="{{ route('ubah_proyek', $proyek->id) }}">Ubah</a> | <a href="#">Hapus</a>
+                            </td>
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="3">Tidak ada data!</td>
+                            <td colspan="4">Tidak ada data!</td>
                         </tr>
                     @endforelse
                 </tbody>

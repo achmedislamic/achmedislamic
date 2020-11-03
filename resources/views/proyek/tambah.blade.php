@@ -1,5 +1,5 @@
 @section('judul')
-    Tambah  Proyek
+    Tambah Proyek
 @endsection
 <x-admin-layout>
     <x-slot name="header">
@@ -10,7 +10,9 @@
 
     <div class="row">
         <div class="col">
-            
+            @livewire('tambah-proyek', [
+                'proyek' => $proyek
+            ])
         </div>
     </div>
     
