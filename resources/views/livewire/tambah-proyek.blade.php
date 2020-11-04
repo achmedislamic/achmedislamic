@@ -1,4 +1,4 @@
-<form wire:submit.prevent="simpan">
+<form wire:submit.prevent="{{ $alamat_submit }}">
     <div class="form-group">
         <label for="judul">Judul Proyek</label>
         <input wire:model="judul" type="text" value="{{ $judul }}"

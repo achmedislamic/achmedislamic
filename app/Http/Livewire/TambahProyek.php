@@ -9,6 +9,8 @@ class TambahProyek extends Component
 {
     public $judul;
     public $deskripsi;
+    public $alamat_submit = 'simpan';
+    public $proyek_id;
 
     protected $rules = [
         'judul' => 'required|min:5',
@@ -20,6 +22,8 @@ class TambahProyek extends Component
         if($proyek != null){
             $this->judul = $proyek->judul;
             $this->deskripsi = $proyek->deskripsi;
+            $this->proyek_id = $proyek->proyek_id;
+            $this->alamat_submit = 'ubah';
         }
     }
 
@@ -32,6 +36,23 @@ class TambahProyek extends Component
         $proyek->user_id = auth()->user()->id;
 
         $proyek->save();
+
+        return redirect()->route('proyek');
+    }
+
+    public function ubah()
+    {
+        if($this->proyek_id) {
+
+            $proyek = Proyek::find($this->proyek_id);
+            
+            if($proyek) {
+                $proyek->update([
+                    'judul'     => $this->judul,
+                    'deskripsi'   => $this->deskripsi
+                ]);
+            }
+        }
 
         return redirect()->route('proyek');
     }
