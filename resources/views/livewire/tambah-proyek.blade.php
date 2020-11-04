@@ -10,7 +10,7 @@
 
     <div class="form-group">
         <label for="deskripsi">Deskrisi Proyek</label>
-        <textarea wire:model="deskripsi" class="form-control" name="deskripsi" id="deskripsi" rows="5">{{ $deskripsi }}</textarea>
+        <textarea wire:model.lazy="deskripsi" class="form-control" name="deskripsi" id="deskripsi" rows="5">{{ $deskripsi }}</textarea>
         @error('deskripsi')
             <div class="bg-danger text-white p-3 mb-2">
                 {{ $message }}

@@ -10,9 +10,14 @@
 
     <div class="row">
         <div class="col">
-            @livewire('tambah-proyek', [
-                'proyek' => $proyek
-            ])
+            @if(isset($proyek))
+                @livewire('tambah-proyek', [
+                    'proyek' => $proyek
+                ])
+            @else
+                @livewire('tambah-proyek')
+            @endif
+            
         </div>
     </div>
     

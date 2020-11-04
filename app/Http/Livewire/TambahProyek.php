@@ -15,15 +15,12 @@ class TambahProyek extends Component
         'deskripsi' => 'required|min:5'
     ];
 
-    public function mount($proyek)
+    public function mount($proyek = null)
     {
-        $this->judul = $proyek->judul;
-        $this->deskripsi = $proyek->deskripsi;
-    }
-
-    public function updated($propertyName)
-    {
-        $this->validateOnly($propertyName);
+        if($proyek != null){
+            $this->judul = $proyek->judul;
+            $this->deskripsi = $proyek->deskripsi;
+        }
     }
 
     public function simpan()
