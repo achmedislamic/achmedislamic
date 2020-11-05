@@ -7,11 +7,6 @@ use App\Models\Proyek;
 
 class ProyekController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         return view('proyek.index', [
@@ -19,60 +14,28 @@ class ProyekController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function tambah()
     {
         return view('proyek.tambah');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function ubah(Proyek $proyek)
     {
-        return view('proyek.tambah', [
-            'proyek' => $proyek
+        return view('proyek.tambah', compact('proyek'));
+    }
+
+    protected function validasiData(){
+        return request()->validate([
+            'proyek_id' => 'required|integer'
         ]);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+    public function hapus()
     {
-        //
-    }
+        $this->validasiData();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+        Proyek::destroy(request('proyek_id'));
+
+        return redirect()->route('proyek');
     }
 }

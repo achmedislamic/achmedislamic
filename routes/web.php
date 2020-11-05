@@ -15,5 +15,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/proyek', [ProyekController::class, 'index'])->name('proyek')->middleware('auth');
-Route::get('/proyek/tambah', [ProyekController::class, 'tambah'])->name('tambah_proyek')->middleware('auth');
-Route::get('/proyek/ubah/{proyek}', [ProyekController::class, 'ubah'])->name('ubah_proyek')->middleware('auth');
+Route::get('/proyek/tambah', [ProyekController::class, 'tambah'])
+    ->name('tambah_proyek')
+    ->middleware('auth');
+Route::get('/proyek/ubah/{proyek}', [ProyekController::class, 'ubah'])
+    ->name('ubah_proyek')
+    ->middleware('auth');
+Route::post('/proyek/hapus', [ProyekController::class, 'hapus'])
+    ->name('hapus_proyek')
+    ->middleware('auth');

@@ -1,6 +1,6 @@
 <form wire:submit.prevent="{{ $alamat_submit }}">
     <div class="form-group">
-        <label for="judul">Judul Proyek</label>
+    <label for="judul">Judul Proyek {{ $proyek_id }}</label>
         <input wire:model="judul" type="text" value="{{ $judul }}"
             class="form-control" name="judul" id="judul" placeholder="Judul Proyek">
         @error('judul')
