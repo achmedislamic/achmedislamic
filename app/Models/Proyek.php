@@ -11,7 +11,8 @@ class Proyek extends Model
 
     protected $fillable = [
         'judul',
-        'deskripsi'
+        'deskripsi',
+        'url'
     ];
     
     public function user()

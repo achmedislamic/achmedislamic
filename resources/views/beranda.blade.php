@@ -43,15 +43,24 @@
             <div class="col">
                 <h2 class="mb-4">Berikut beberapa proyek yang pernah saya kerjakan</h2>
                     <ul class="list-unstyled">
-                        <li class="media">
-                            <svg class="bi text-primary mr-3" width="32" height="32">
-                                <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill"/>
-                            </svg>
-                            <div class="media-body">
-                                <h5 class="mt-0 mb-1">eNTeBePlan</h5>
-                                <p>Merupakan sistem perencanaan APBD untuk Provinsi NTB.</p>
-                            </div>
-                        </li>
+                        @foreach ($proyeks as $proyek)
+                            <li class="media">
+                                <svg class="bi text-primary mr-3" width="32" height="32">
+                                    <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill"/>
+                                </svg>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-1">{{ $proyek->judul }}</h5>
+                                    <p>{{ $proyek->deskripsi }}</p>
+                                    @isset($proyek->url)
+                                    <a href="{{ $proyek->url }}" target="_blank" 
+                                        class="btn btn-info">
+                                        Kunjungi Situs
+                                    </a>
+                                    @endisset
+                                </div>
+                            </li>
+                        @endforeach
+                        
                   </ul>
             </div>
         </div>

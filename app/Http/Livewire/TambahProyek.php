@@ -9,13 +9,15 @@ class TambahProyek extends Component
 {
     public $judul;
     public $deskripsi;
+    public $url;
     public $alamat_submit = 'simpan';
     public $proyek_id;
     public $proyek_terpilih;
 
     protected $rules = [
         'judul' => 'required|min:5',
-        'deskripsi' => 'required|min:5'
+        'deskripsi' => 'required|min:5',
+        'url' => 'min:10|url'
     ];
 
     public function mount($proyek = null)
@@ -24,8 +26,14 @@ class TambahProyek extends Component
             $this->judul = $proyek->judul;
             $this->deskripsi = $proyek->deskripsi;
             $this->proyek_id = $proyek->id;
+            $this->url = $proyek->url;
             $this->alamat_submit = 'ubah';
         }
+    }
+
+    public function updated($propertyName)
+    {
+        $this->validateOnly($propertyName);
     }
 
     public function simpan()
@@ -47,7 +55,8 @@ class TambahProyek extends Component
 
             Proyek::find($this->proyek_id)->update([
                 'judul'     => $this->judul,
-                'deskripsi'   => $this->deskripsi
+                'deskripsi'   => $this->deskripsi,
+                'url' => $this->url
             ]);
         }
 

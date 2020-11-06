@@ -47,6 +47,7 @@
                         <th>No.</th>
                         <th>Judul</th>
                         <th>Deskripsi</th>
+                        <th>URL</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
@@ -60,9 +61,13 @@
                             <td>{{ $proyek->judul }}</td>
                             <td>{{ $proyek->deskripsi }}</td>
                             <td>
+                                {{ isset($proyek->url) ? $proyek->url : '(Tidak ada URL)' }}
+                            </td>
+                            <td>
                                 <a href="{{ route('ubah_proyek', $proyek->id) }}">Ubah</a> | 
                                 <a href="#" data-toggle="modal" data-target="#deleteModal" data-proyek_id="{{ $proyek->id }}">Hapus</a>
                             </td>
+                            
                         </tr>
                     @empty
                         <tr>

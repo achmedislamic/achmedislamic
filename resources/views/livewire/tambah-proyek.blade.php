@@ -18,5 +18,10 @@
         @enderror
     </div>
 
+    <div class="form-group">
+      <label for="url">URL</label>
+      <input wire:model="url" type="text" class="form-control" name="url" id="url" placeholder="Masukkan URL">
+    </div>
+
     <button type="submit" class="btn btn-primary">Simpan</button>
 </form>
