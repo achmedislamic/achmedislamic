@@ -18,9 +18,13 @@
     <button type="submit" class="btn btn-success mb-3">Kirim</button>
     <div>
         @if (session()->has('message'))
-            <div class="p-3 mb-2 bg-success text-white">{{ session('message') }}</div>
+            <div class="p-3 mb-2 bg-success text-white" id="message">{{ session('message') }}</div>
             <script>
-                $('.form-group').empty();
+                $('.form-group').addClass('animate__animated animate__backOutRight');
+                var delay = 1000;
+                    setTimeout(function() {
+                        $('.form-group').hide();
+                }, delay);
                 $('input[name="_token"]').remove();
                 $('button[type="submit"]').hide();
             </script>

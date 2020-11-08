@@ -5,7 +5,7 @@
 @endsection
 
 @section('konten')
-    <div class="container my-5">
+    <div class="container my-5 animate__animated animate__fadeInDown">
         <div class="row">
             <div class="col-md-6">
                 <div class="text-lg font-weight-bold">Full-stack web developer & Penulis Blog</div>
@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <div class="container my-5">
+    <div class="container my-5 animate__animated animate__fadeInRight">
         <div class="row">
             <div class="col">
                 <p class="hero-text">
@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div class="container-fluid my-5">
+    <div class="container-fluid my-5 animate__animated animate__fadeInLeft animate__delay-1s">
         <div class="row">
             <div class="col text-center">
                 <img src="/img/responsif.png" class="img-fluid">
