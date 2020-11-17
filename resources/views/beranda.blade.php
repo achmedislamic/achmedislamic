@@ -42,6 +42,47 @@
         <div class="row">
             <div class="col">
                 <h2 class="mb-4">Berikut beberapa proyek yang pernah saya kerjakan</h2>
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        @php
+                            $i = 1;
+                        @endphp
+                        @foreach ($proyeks as $proyek)
+                            <div class="carousel-item @php $i == 1 ? 'active' : '' @endphp">
+                                <img src="/img/nama.png" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>{{ $proyek->judul }}</h3>
+                                    <p>{{ $proyek->deskripsi }}</p>
+                                </div>
+                            </div>
+                            @php
+                                $i++;
+                            @endphp
+                        @endforeach
+                        
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Sebelumnya</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Selanjutnya</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <h2 class="mb-4">Berikut beberapa proyek yang pernah saya kerjakan</h2>
                     <ul class="list-unstyled">
                         @foreach ($proyeks as $proyek)
                             <li class="media">
@@ -73,7 +114,7 @@
                 <p>Ini dia teknologi yang dipakai di situs pribadi saya ini.</p>
                 <ol>
                     <li>Laravel sebagai Backend</li>
-                    <li>Bootstrap dan jQuery untuk Frontend</li>
+                    <li>Bootstrap, jQuery dan Animate CSS untuk Frontend</li>
                     <li>Livewire untuk form yang dinamis</li>
                     <li>Bootstrap Icons</li>
                     <li>PHP versi 7.4 terbaru</li>
@@ -83,6 +124,26 @@
                     Anda bisa download atau clone repositorynya 
                     <a target="_blank" href="https://github.com/achmedislamic/achmedislamic">di Github saya.</a>
                 </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col">
+                <h2><strong>Anda butuh website?</strong> Saya bisa menerima proyek anda! Berikut daftar proyek yang bisa saya kerjakan:</h2>
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <svg class="bi text-primary mr-3" width="32" height="32">
+                            <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill"/>
+                        </svg>
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Company Profile</h5>
+                            <h5>Sistem Informasi</h5>
+
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

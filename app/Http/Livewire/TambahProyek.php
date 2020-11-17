@@ -4,20 +4,25 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Proyek;
+use Livewire\WithFileUploads;
 
 class TambahProyek extends Component
 {
+    use WithFileUploads;
+
     public $judul;
     public $deskripsi;
     public $url;
     public $alamat_submit = 'simpan';
     public $proyek_id;
     public $proyek_terpilih;
+    public $gambar;
 
     protected $rules = [
         'judul' => 'required|min:5',
         'deskripsi' => 'required|min:5',
-        'url' => 'min:10|url'
+        'url' => 'min:10|url',
+        'gambar' => 'image|max:1024',
     ];
 
     public function mount($proyek = null)
@@ -27,6 +32,7 @@ class TambahProyek extends Component
             $this->deskripsi = $proyek->deskripsi;
             $this->proyek_id = $proyek->id;
             $this->url = $proyek->url;
+            $this->gambar = $proyek->gambar;
             $this->alamat_submit = 'ubah';
         }
     }
@@ -43,6 +49,8 @@ class TambahProyek extends Component
         $proyek = new Proyek($data_tervalidasi);
 
         $proyek->user_id = auth()->user()->id;
+
+        $proyek->gambar = $this->gambar->store('gambar', 'public');
 
         $proyek->save();
 
