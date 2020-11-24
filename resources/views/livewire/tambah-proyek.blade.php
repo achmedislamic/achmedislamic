@@ -20,14 +20,14 @@
 
     @if ($gambar)
         @if($alamat_submit == 'simpan')
-            <img src="{{ $gambar->temporaryUrl() }}">
+            <img class="img-thumbnail" src="{{ $gambar->temporaryUrl() }}">
         @else
             @if(method_exists($gambar, 'temporaryUrl'))
                 <p>Gambar yang akan menggantinya</p>
-                <img src="{{ $gambar->temporaryUrl() }}">
+                <img class="img-thumbnail" src="{{ $gambar->temporaryUrl() }}">
             @else
                 <p>Gambar yang telah di upload sebelumnya:</p>
-                <img src="{{ Storage::url($gambar) }}">
+                <img class="img-thumbnail" src="{{ Storage::url($gambar) }}">
             @endif
         @endif
     @else
