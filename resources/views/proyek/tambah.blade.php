@@ -1,10 +1,18 @@
 @section('judul')
-    Tambah Proyek
+    @if(isset($judul))
+        {{ $judul }}
+    @else
+        Tambah Proyek
+    @endif
 @endsection
 <x-admin-layout>
     <x-slot name="header">
         <h2 class="h4 font-weight-bold">
-            Tambah Proyek
+            @if(isset($judul))
+                {{ $judul }}
+            @else
+                Tambah Proyek
+            @endif
         </h2>
     </x-slot>
 

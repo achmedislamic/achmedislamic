@@ -21,7 +21,10 @@ class ProyekController extends Controller
 
     public function ubah(Proyek $proyek)
     {
-        return view('proyek.tambah', compact('proyek'));
+        return view('proyek.tambah', [
+            'proyek' => $proyek,
+            'judul' => 'Ubah Proyek'
+        ]);
     }
 
     protected function validasiData(){

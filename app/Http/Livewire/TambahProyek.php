@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Proyek;
+use Illuminate\Support\Facades\Storage;
 use Livewire\WithFileUploads;
 
 class TambahProyek extends Component
@@ -60,12 +61,21 @@ class TambahProyek extends Component
     public function ubah()
     {
         if($this->proyek_id) {
-
-            Proyek::find($this->proyek_id)->update([
+            $proyek = Proyek::find($this->proyek_id);
+            
+            $store = [
                 'judul'     => $this->judul,
                 'deskripsi'   => $this->deskripsi,
                 'url' => $this->url
-            ]);
+            ];
+
+            if($this->gambar){
+                Storage::delete($proyek->gambar);
+                $store['gambar'] = $this->gambar->store('gambar', 'public');
+            }
+
+            $proyek->update($store);
+
         }
 
         return redirect()->route('proyek');

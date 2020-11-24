@@ -19,13 +19,19 @@
     </div>
 
     @if ($gambar)
-        Gambar yang akan diupload:
         @if($alamat_submit == 'simpan')
             <img src="{{ $gambar->temporaryUrl() }}">
         @else
-            <img src="{{ Storage::url($gambar) }}">
+            @if(method_exists($gambar, 'temporaryUrl'))
+                <p>Gambar yang akan menggantinya</p>
+                <img src="{{ $gambar->temporaryUrl() }}">
+            @else
+                <p>Gambar yang telah di upload sebelumnya:</p>
+                <img src="{{ Storage::url($gambar) }}">
+            @endif
         @endif
-        
+    @else
+        <div class="p-3 mb-2 bg-warning text-dark">Belum ada gambar di upload</div>
     @endif
 
     <div class="form-group">
