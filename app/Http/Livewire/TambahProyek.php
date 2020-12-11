@@ -70,8 +70,10 @@ class TambahProyek extends Component
             ];
 
             if($this->gambar){
-                Storage::delete($proyek->gambar);
-                $store['gambar'] = $this->gambar->store('gambar', 'public');
+                $isSuccess = Storage::disk('public')->delete($proyek->gambar);
+                if($isSuccess){
+                    $store['gambar'] = $this->gambar->store('gambar', 'public');
+                }
             }
 
             $proyek->update($store);
