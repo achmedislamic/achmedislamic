@@ -3,12 +3,15 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ProyekController;
+use App\Http\Controllers\ResumeController;
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
 Route::get('/', [BerandaController::class, 'index']);
+Route::get('/resume', [ResumeController::class, 'index'])->name('resume');
+Route::get('/resume/pdf', [ResumeController::class, 'pdf'])->name('resume_pdf');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
