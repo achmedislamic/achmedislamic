@@ -152,7 +152,7 @@ Beranda
 
     <div class="row">
         <div class="col-2">
-            <img class="rounded-circle w-100" src="/img/achmed" alt="Foto Profil Achmed Islamic Hernawna">
+            <img class="rounded-circle w-100" src="/img/achmed.jpg" alt="Foto Profil Achmed Islamic Hernawna">
         </div>
         <div class="col-10 my-auto">
             <p>Anda bisa cari informasi tentang saya jika anda 
@@ -173,7 +173,7 @@ Beranda
             <div class="container">
                 <div class="row">
                     <div class="col text-mode">
-                        <h2 class="pt-3"><strong>Kontak Saya!</strong></h2>
+                        <h2 class="pt-3"><strong>Sudah pas? Saatnya berbisnis!</strong></h2>
                         <p>Ada proyek kerjasama, pertanyaan atau apapun itu? Kontak saya lewat email atau
                             mengisi formulir dibawah ini.
                         </p>
