@@ -13,7 +13,15 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+        <style>
+            body {
+                background-color: #f2f2f2;
+            }
 
+            * { 
+                font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+            }
+        </style>
         @livewireStyles
 
         <!-- Scripts -->
@@ -23,7 +31,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
     </head>
-    <body class="bg-light">
+    <body>
         <!-- Page Content -->
         <main class="my-5">
             {{-- {{ $slot }} --}}

@@ -35,11 +35,11 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Profil</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#proyek">Proyek</a>
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#kontak">Kontak</a>
                     </li>
                     

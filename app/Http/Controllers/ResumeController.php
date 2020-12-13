@@ -14,6 +14,6 @@ class ResumeController extends Controller
 
     public function pdf()
     {
-        return Storage::download('resume_pdf.jpg');
+        return Storage::disk('public')->download('resume_pdf.pdf');
     }
 }
