@@ -10,6 +10,8 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
+        <link rel="shortcut icon" href="/img/favicon.png">
+
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
@@ -17,7 +19,7 @@
         @livewireStyles
 
         <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.0/dist/alpine.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -25,13 +27,20 @@
     </head>
     <body class="bg-light">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{ url('/') }}"><img width="224px" src="/img/nama.png" alt="Logo Achmed Islamic Hernawan"></a>
+        <a class="navbar-brand" href="{{ url('/') }}"><img id="logo" width="224px" src="/img/nama.png" alt="Logo Achmed Islamic Hernawan"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="mode" title="Hidupkan Dark Mode">
+                            <svg class="bi mr-3" width="26" height="26">
+                                <use id="mode-icon" xlink:href="/icons/bootstrap-icons.svg#moon" />
+                            </svg>
+                        </a>
+                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Profil</a>
                     </li>
@@ -58,6 +67,39 @@
 
         <script src="{{ asset('js/app.js') }}"></script>
         @livewireScripts
-        {{-- @stack('scripts') --}}
+        <script>
+            $('#mode').click(function (e) { 
+                e.preventDefault();
+                $('.text-mode, label').toggleClass('text-white')
+                if($('body').attr('class') === 'bg-dark'){
+                    $('body').attr('class', 'bg-light')
+
+                    $('nav').removeClass('navbar-dark')
+                    $('nav').removeClass('bg-dark')
+                    $('nav').addClass('navbar-light')
+                    $('nav').addClass('bg-light')
+
+                    $('#curve').attr('class', 'text-info')
+                    $('#kontak').removeClass('bg-secondary')
+                    $('#kontak').addClass('bg-info')
+                    $('#mode-icon').attr('xlink:href', '/icons/bootstrap-icons.svg#moon')
+                    $('#logo').attr('src', '/img/nama.png')
+                } else {
+                    $('body').attr('class', 'bg-dark')
+                    
+                    $('nav').removeClass('navbar-light')
+                    $('nav').removeClass('bg-light')
+                    $('nav').addClass('navbar-dark')
+                    $('nav').addClass('bg-dark')
+
+                    $('#curve').attr('class', 'text-secondary')
+                    $('#kontak').removeClass('bg-info')
+                    $('#kontak').addClass('bg-secondary')
+                    $('#mode-icon').attr('xlink:href', '/icons/bootstrap-icons.svg#lamp')
+                    $('#logo').attr('src', '/img/nama-white.png')
+                }
+                
+            });
+        </script>
     </body>
 </html>

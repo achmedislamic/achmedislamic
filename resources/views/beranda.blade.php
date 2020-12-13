@@ -8,7 +8,7 @@ Beranda
 <div class="container my-5 animate__animated animate__fadeInDown">
     <div class="row">
         <div class="col-md-6">
-            <div class="text-lg font-weight-bold">Full-stack web developer & Penulis Blog</div>
+            <div class="text-lg font-weight-bold text-mode">Full-stack web developer & Penulis Blog</div>
             <div class="text-primary text-lg font-weight-bold accent-color">Selamat datang di situs saya.</div>
         </div>
         <div class="col-md-6">
@@ -20,7 +20,7 @@ Beranda
 <div class="container my-5 animate__animated animate__fadeInRight">
     <div class="row">
         <div class="col">
-            <p class="hero-text">
+            <p class="hero-text text-mode">
                 Assalamualaikum! Perkenalkan saya Achmed. Saya bekerja dalam bidang pembuatan 
                 website dan menulis blog.
                 Saya ahli menggunakan <a href="https://codeigniter.com" target="_blank">CodeIgniter</a> 
@@ -45,7 +45,7 @@ Beranda
 <div class="container my-5" id="proyek">
     <div class="row">
         <div class="col">
-            <h2 class="mb-3"><strong>Anda butuh website?</strong> Saya bisa menerima proyek anda! Berikut daftar proyek yang bisa
+            <h2 class="mb-3 text-mode"><strong>Anda butuh website?</strong> Saya bisa menerima proyek anda! Berikut daftar proyek yang bisa
                 saya kerjakan:</h2>
             <ul class="list-unstyled">
 
@@ -53,7 +53,7 @@ Beranda
                     <svg class="bi text-primary mr-3" width="32" height="32">
                         <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body">
+                    <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Sistem Informasi</h5>
                         Sistem pengelolaan Informasi perusahaan, keuangan, dan manajemen. 
                         Contoh proyek yang telah saya kerjakan adalah sistem informasi perencanaan 
@@ -66,7 +66,7 @@ Beranda
                     <svg class="bi text-primary mr-3" width="32" height="32">
                         <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body">
+                    <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">E-Commerce</h5>
                         Situs penjualan produk dengan pengiriman barang se-Indonesia dan pembayaran aman
                         serta dengan dukungan banyak Bank dan metode pembayaran. Contoh proyek yang saya
@@ -79,7 +79,7 @@ Beranda
                     <svg class="bi text-primary mr-3" width="32" height="32">
                         <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body">
+                    <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Company Profile dan Portofolio</h5>
                         Situs Perusahaan yang dapat memperkenalkan produk, kegiatan, dan lain-lain seperti situs ini.
                     </div>
@@ -89,7 +89,7 @@ Beranda
                     <svg class="bi text-primary mr-3" width="32" height="32">
                         <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body">
+                    <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Blog</h5>
                         Ekspresikan hobi anda dengan menulis di blog yang memiliki fitur lengkap dengan multi-author dan saya bisa bantu anda untuk menghasilkan uang melalui Google Adsense!
                     </div>
@@ -99,7 +99,7 @@ Beranda
                     <svg class="bi text-primary mr-3" width="32" height="32">
                         <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body">
+                    <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Pembuatan Artikel & SEO Advisor</h5>
                         Tak perlu bingung dalam menulis artikel. Berikan saya rangkuman atau highlight artikel anda dan saya siap bantu anda membuat artikel.
                         Saya juga siap membantu situs anda memiliki ranking tinggi di mesin pencari dengan pengalaman SEO saya lebih dari 5 tahun!
@@ -113,8 +113,8 @@ Beranda
 <div class="container my-5">
     <div class="row">
         <div class="col">
-            <h2>Resume Tradisional</h2>
-            <p>Bagi anda yang lebih menyukai Resume Tradisional seperti format Curriculum Vitae, 
+            <h2 class="text-mode">Resume Tradisional</h2>
+            <p class="text-mode">Bagi anda yang lebih menyukai Resume Tradisional seperti format Curriculum Vitae, 
                 <a href="{{ route('resume') }}">Klik disini untuk format HTML-nya</a> atau 
                 <a href="{{ route('resume_pdf') }}">klik disini untuk format PDF.</a></p>
             
@@ -124,7 +124,7 @@ Beranda
 
 <div class="container my-5">
     <div class="row">
-        <div class="col">
+        <div class="col text-mode">
             <h2>Eiittsss! Ingin tahu situs ini menggunakan teknologi web apa saja?</h2>
             <p>Ini dia teknologi yang dipakai di situs pribadi saya ini.</p>
             <ol>
@@ -143,7 +143,7 @@ Beranda
     </div>
 </div>
 
-<div class="container my-5">
+<div class="container my-5 text-mode">
     <div class="row">
         <div class="col">
             <h2>Kepo dengan saya?</h2>
@@ -152,7 +152,7 @@ Beranda
 
     <div class="row">
         <div class="col-2">
-            <img class="rounded-circle w-100" src="{{ Storage::disk('public')->url('achmed.jpg') }}" alt="Foto Profil Achmed Islamic Hernawna">
+            <img class="rounded-circle w-100" src="/img/achmed" alt="Foto Profil Achmed Islamic Hernawna">
         </div>
         <div class="col-10 my-auto">
             <p>Anda bisa cari informasi tentang saya jika anda 
@@ -162,7 +162,7 @@ Beranda
     </div>
 </div>
 
-<svg fill="currentColor" viewBox="0 0 1695 57" class="text-info">
+<svg fill="currentColor" viewBox="0 0 1695 57" class="text-info" id="curve">
     <path d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1c183.6-.1 344.5 7.3 482.8 22v34H0V23z">
     </path>
 </svg>
@@ -172,7 +172,7 @@ Beranda
         <div class="col">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col text-mode">
                         <h2 class="pt-3"><strong>Kontak Saya!</strong></h2>
                         <p>Ada proyek kerjasama, pertanyaan atau apapun itu? Kontak saya lewat email atau
                             mengisi formulir dibawah ini.
