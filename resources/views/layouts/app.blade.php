@@ -17,7 +17,16 @@
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
         @livewireStyles
-
+        <style>
+            body, nav {
+                background: rgb(29, 29, 29);
+                transition: 1s;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -ms-transition: 1s;
+                -o-transition: 1s;
+                }
+        </style>
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
         <link

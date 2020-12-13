@@ -37,7 +37,7 @@ Beranda
 <div class="container-fluid my-5 animate__animated animate__fadeInLeft animate__delay-1s">
     <div class="row">
         <div class="col text-center">
-            <img src="/img/responsif.png" class="img-fluid">
+            <img src="/img/ilustrasi.png" class="img-fluid">
         </div>
     </div>
 </div>
