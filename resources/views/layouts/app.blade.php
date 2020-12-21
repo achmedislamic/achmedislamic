@@ -6,7 +6,20 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>@yield('judul') - Achmed Islamic H. | Situs Pribadi</title>
-
+        <meta name="description" content="Situs pribadi Achmed Islamic Hernawan yang memuat 
+        profil, proyek yang pernah dikerjakan, dan jika anda membutuhkan website, saya bisa membantu anda." />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <link rel="canonical" href="https://achmedislamic.com/" />
+        <meta property="og:locale" content="id_ID" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="AchmedIslamic" />
+        <meta property="og:description" content="Situs pribadi Achmed Islamic Hernawan yang memuat 
+        profil, proyek yang pernah dikerjakan, dan jika anda membutuhkan website, saya bisa membantu anda." />
+        <meta property="og:url" content="https://achmedislamic.com/" />
+        <meta property="og:site_name" content="AchmedIslamic" />
+        <meta property="og:image" content="/img/favicon.png" />
+        <meta property="og:image:width" content="200" />
+        <meta property="og:image:height" content="200" />
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
