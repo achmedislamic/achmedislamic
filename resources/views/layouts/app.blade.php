@@ -6,18 +6,16 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>@yield('judul') - Achmed Islamic H. | Situs Pribadi</title>
-        <meta name="description" content="Situs pribadi Achmed Islamic Hernawan yang memuat 
-        profil, proyek yang pernah dikerjakan, dan jika anda membutuhkan website, saya bisa membantu anda." />
+        <meta name="description" content="Laravel/CodeIgniter dan Bootstrap Web Developer. Programmer berpengalaman selama 4 tahun yang sudah mengerjakan berbagai macam proyek yang siap membuat website untuk anda.." />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://achmedislamic.com/" />
         <meta property="og:locale" content="id_ID" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Situs Pribadi Achmed Islamic H." />
-        <meta property="og:description" content="Situs pribadi Achmed Islamic Hernawan yang memuat 
-        profil, proyek yang pernah dikerjakan, dan jika anda membutuhkan website, saya bisa membantu anda." />
+        <meta property="og:description" content="Laravel/CodeIgniter dan Bootstrap Web Developer. Programmer berpengalaman selama 4 tahun yang sudah mengerjakan berbagai macam proyek yang siap membuat website untuk anda." />
         <meta property="og:url" content="https://achmedislamic.com/" />
         <meta property="og:site_name" content="Situs Pribadi Achmed Islamic H." />
-        <meta property="og:image" content="https://achmedislamic.com/img/favicon.png" />
+        <meta property="og:image" content="https://achmedislamic.com/img/ilustrasi.png" />
         <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="200" />
         <!-- Fonts -->
