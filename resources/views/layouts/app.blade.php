@@ -15,7 +15,7 @@
         <meta property="og:description" content="Laravel/CodeIgniter dan Bootstrap Web Developer. Programmer berpengalaman selama 4 tahun yang sudah mengerjakan berbagai macam proyek yang siap membuat website untuk anda." />
         <meta property="og:url" content="https://achmedislamic.com/" />
         <meta property="og:site_name" content="Situs Pribadi Achmed Islamic H." />
-        <meta property="og:image" content="https://achmedislamic.com/img/ilustrasi.png" />
+        <meta property="og:image" content="https://achmedislamic.com/img/favicon.png" />
         <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="200" />
         <!-- Fonts -->
