@@ -12,11 +12,11 @@
         <link rel="canonical" href="https://achmedislamic.com/" />
         <meta property="og:locale" content="id_ID" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="AchmedIslamic" />
+        <meta property="og:title" content="Situs Pribadi Achmed Islamic H." />
         <meta property="og:description" content="Situs pribadi Achmed Islamic Hernawan yang memuat 
         profil, proyek yang pernah dikerjakan, dan jika anda membutuhkan website, saya bisa membantu anda." />
         <meta property="og:url" content="https://achmedislamic.com/" />
-        <meta property="og:site_name" content="AchmedIslamic" />
+        <meta property="og:site_name" content="Situs Pribadi Achmed Islamic H." />
         <meta property="og:image" content="/img/favicon.png" />
         <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="200" />
