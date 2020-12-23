@@ -8,7 +8,7 @@ Repository ini berisi seluruh source code dari situs pribadi saya yaitu achmedis
 
 Situs ini ditenagai oleh Laravel sebagai backend. Untuk tampilan, saya menggunakan Bootstrap dan jQuery. Untuk sistem login, saya menggunakan paket Laravel Jetstream menggunakan stack Blade dan Livewire.
 
-##Mulai
+## Mulai
 
 Sangat mudah menggunakan Repo ini. Berikut caranya:
 
