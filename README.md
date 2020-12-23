@@ -1,8 +1,8 @@
 # Halo semua 👋
 
-#Situs Pribadi Achmed Islamic Hernawan
+# Situs Pribadi Achmed Islamic Hernawan
 
-##Perkenalan
+## Perkenalan
 
 Repository ini berisi seluruh source code dari situs pribadi saya yaitu achmedislamic.com. Situs ini memuat profil singkat, proyek yang bisa dikerjakan, resume dan kontak saya.
 
