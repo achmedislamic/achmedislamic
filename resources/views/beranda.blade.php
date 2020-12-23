@@ -105,6 +105,16 @@ Beranda
                         Saya juga siap membantu situs anda memiliki ranking tinggi di mesin pencari dengan pengalaman SEO saya lebih dari 5 tahun!
                     </div>
                 </li>
+
+                <li class="media mb-3">
+                    <svg class="bi text-primary mr-3" width="32" height="32">
+                        <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
+                    </svg>
+                    <div class="media-body text-mode">
+                        <h5 class="mt-0 mb-1 font-weight-bold">Optimasi Situs Wordpress</h5>
+                        Anda punya Website berbasis Wordpress? Dengan pengalaman menggunakan Wordpress lebih dari 5 tahun, saya bisa membantu anda melakukan optimasi sehingga situs anda cepat diakses dan memiliki keamanan yang lebih baik.
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
