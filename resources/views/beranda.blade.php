@@ -126,7 +126,7 @@ Beranda
             <h2 class="text-mode">Resume Tradisional</h2>
             <p class="text-mode">Bagi anda yang lebih menyukai Resume Tradisional seperti format Curriculum Vitae, 
                 <a href="{{ route('resume') }}">Klik disini untuk format HTML-nya</a> atau 
-                <a href="{{ route('resume_pdf') }}">klik disini untuk format PDF.</a></p>
+                <a href="/document/curriculum-vitae-achmed-islamic-hernawan.pdf">klik disini untuk format PDF.</a></p>
             
         </div>
     </div>

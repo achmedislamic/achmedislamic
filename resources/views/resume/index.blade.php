@@ -77,7 +77,7 @@ Resume
                         2018-01 - Sekarang
                     </div>
                     <div class="col-10">
-                        <x-h4>Web Developer (Tenaga Kontrak)</x-h4>
+                        <x-h4>Web Developer</x-h4>
                         <p class="mb-1"><i>Badan Perencanaan Pembangunan, Penelitian dan
                             Pengembangan Daerah, Mataram, NTB</i></p>
                         <p>Merancang, mendesain, dan membangun aplikasi
