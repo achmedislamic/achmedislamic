@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ProyekController;
 use App\Http\Controllers\ResumeController;
+use App\Http\Controllers\KontakController;
+
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -27,3 +29,5 @@ Route::get('/proyek/ubah/{proyek}', [ProyekController::class, 'ubah'])
 Route::post('/proyek/hapus', [ProyekController::class, 'hapus'])
     ->name('hapus_proyek')
     ->middleware('auth');
+
+Route::get('/kontak', [KontakController::class, 'index'])->name('kontak')->middleware('auth');

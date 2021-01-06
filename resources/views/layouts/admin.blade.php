@@ -39,6 +39,10 @@
                         <x-jet-nav-link href="{{ route('proyek') }}" :active="request()->routeIs('proyek')">
                             {{ __('Proyek') }}
                         </x-jet-nav-link>
+
+                        <x-jet-nav-link href="{{ route('kontak') }}" :active="request()->routeIs('kontak')">
+                            {{ __('Kontak') }}
+                        </x-jet-nav-link>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
