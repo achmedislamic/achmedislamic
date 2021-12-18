@@ -57,7 +57,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#" id="mode" title="Hidupkan Dark Mode">
                             <svg class="bi mr-3" width="26" height="26">
-                                <use id="mode-icon" xlink:href="{{ asset('icons/bootstrap-icons.svg') }}#moon" />
+                                <use id="mode-icon" xlink:href="{{ asset('css/bootstrap-icons.svg') }}#moon" />
                             </svg>
                         </a>
                     </li>
@@ -90,7 +90,7 @@
         <script>
             $('#mode').click(function (e) {
                 e.preventDefault();
-                let icon = '{{ asset("icons/bootstrap-icons.svg") }}';
+                let icon = '{{ asset("css/bootstrap-icons.svg") }}';
                 $('.text-mode, label').toggleClass('text-white')
                 if($('body').attr('class') === 'bg-dark'){
                     $('body').attr('class', 'bg-light')
