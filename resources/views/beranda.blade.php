@@ -21,10 +21,10 @@ Beranda
     <div class="row">
         <div class="col">
             <p class="hero-text text-mode">
-                Assalamualaikum! Perkenalkan saya Achmed. Saya bekerja dalam bidang pembuatan 
+                Assalamualaikum! Perkenalkan saya Achmed. Saya bekerja dalam bidang pembuatan
                 website dan menulis blog.
-                Saya ahli menggunakan <a href="https://codeigniter.com" target="_blank">CodeIgniter</a> 
-                dan <a href="https://laravel.com" target="_blank">Laravel</a> Framework untuk backend, 
+                Saya ahli menggunakan <a href="https://codeigniter.com" target="_blank">CodeIgniter</a>
+                dan <a href="https://laravel.com" target="_blank">Laravel</a> Framework untuk backend,
                 <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> untuk styling dan
                 <a href="https://jquery.com" target="_blank">jQuery</a> untuk frontend. Saya juga memiliki blog pribadi yaitu
                 <a href="https://windowsku.com" target="_blank">Windowsku</a> dimana saya membagikan pengetahuan saya
@@ -51,33 +51,33 @@ Beranda
 
                 <li class="media mb-3">
                     <svg class="bi text-primary mr-3" width="32" height="32">
-                        <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
+                        <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
                     <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Sistem Informasi</h5>
-                        Sistem pengelolaan Informasi perusahaan, keuangan, dan manajemen. 
-                        Contoh proyek yang telah saya kerjakan adalah sistem informasi perencanaan 
-                        <a href="https://e-planning.ntbprov.go.id" target="_blank">eNTeBePlan</a> dan 
+                        Sistem pengelolaan Informasi perusahaan, keuangan, dan manajemen.
+                        Contoh proyek yang telah saya kerjakan adalah sistem informasi perencanaan
+                        <a href="https://e-planning.ntbprov.go.id" target="_blank">eNTeBePlan</a> dan
                         <a href="https://e-kinerja.ntbprov.go.id" target="_blank">e-Kinerja.</a>
                     </div>
                 </li>
 
                 <li class="media mb-3">
                     <svg class="bi text-primary mr-3" width="32" height="32">
-                        <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
+                        <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
                     <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">E-Commerce</h5>
                         Situs penjualan produk dengan pengiriman barang se-Indonesia dan pembayaran aman
                         serta dengan dukungan banyak Bank dan metode pembayaran. Contoh proyek yang saya
-                        kerjakan adalah  
+                        kerjakan adalah
                         <a href="https://madurasabuah.com" target="_blank">Madurasabuah.com.</a>
                     </div>
                 </li>
 
                 <li class="media mb-3">
                     <svg class="bi text-primary mr-3" width="32" height="32">
-                        <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
+                        <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
                     <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Company Profile dan Portofolio</h5>
@@ -87,7 +87,7 @@ Beranda
 
                 <li class="media mb-3">
                     <svg class="bi text-primary mr-3" width="32" height="32">
-                        <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
+                        <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
                     <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Blog</h5>
@@ -97,7 +97,7 @@ Beranda
 
                 <li class="media mb-3">
                     <svg class="bi text-primary mr-3" width="32" height="32">
-                        <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
+                        <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
                     <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Pembuatan Artikel & SEO Advisor</h5>
@@ -108,7 +108,7 @@ Beranda
 
                 <li class="media mb-3">
                     <svg class="bi text-primary mr-3" width="32" height="32">
-                        <use xlink:href="/icons/bootstrap-icons.svg#check-circle-fill" />
+                        <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
                     <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Optimasi Situs Wordpress</h5>
@@ -124,10 +124,10 @@ Beranda
     <div class="row">
         <div class="col">
             <h2 class="text-mode">Resume Tradisional</h2>
-            <p class="text-mode">Bagi anda yang lebih menyukai Resume Tradisional seperti format Curriculum Vitae, 
-                <a href="{{ route('resume') }}">Klik disini untuk format HTML-nya</a> atau 
+            <p class="text-mode">Bagi anda yang lebih menyukai Resume Tradisional seperti format Curriculum Vitae,
+                <a href="{{ route('resume') }}">Klik disini untuk format HTML-nya</a> atau
                 <a href="/document/curriculum-vitae-achmed-islamic-hernawan.pdf">klik disini untuk format PDF.</a></p>
-            
+
         </div>
     </div>
 </div>
@@ -165,7 +165,7 @@ Beranda
             <img class="rounded-circle w-100" src="/img/achmed.jpg" alt="Foto Profil Achmed Islamic Hernawna">
         </div>
         <div class="col-10 my-auto">
-            <p>Anda bisa cari informasi tentang saya jika anda 
+            <p>Anda bisa cari informasi tentang saya jika anda
                 <a target="_blank" href="https://www.google.com/search?source=hp&ei=8E_VX6P8G8HUrtoP7O-IoAw&iflsig=AINFCbYAAAAAX9VeACDjjPlyfmC2ELZrWsOXhiZCrvJR&q=achmed+islamic+hernawan&oq=achmed+islamic+hernawan&gs_lcp=CgZwc3ktYWIQAzIFCCEQoAE6BQguEJMCOgUIABCxAzoICC4QsQMQgwE6AggAOggIABCxAxCDAToLCC4QsQMQgwEQkwI6BQguELEDOggILhCxAxCTAjoCCC46BAgAEAo6BggAEBYQHjoICAAQFhAKEB46BAghEBU6BwghEAoQoAFQ_QdYrRpguhxoAXAAeACAAZwBiAG3FpIBBDIuMjGYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=psy-ab&ved=0ahUKEwijtJuYysntAhVBqksFHew3AsQQ4dUDCAY&uact=5">
                     mengetik nama lengkap saya di Google.</a> Seluruh jejak digital dan kontribusi saya di internet bisa anda temukan disana.</p>
         </div>
