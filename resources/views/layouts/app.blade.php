@@ -57,7 +57,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#" id="mode" title="Hidupkan Dark Mode">
                             <svg class="bi mr-3" width="26" height="26">
-                                <use id="mode-icon" xlink:href="/icons/bootstrap-icons.svg#moon" />
+                                <use id="mode-icon" xlink:href="{{ asset('icons/bootstrap-icons.svg') }}#moon" />
                             </svg>
                         </a>
                     </li>
@@ -71,11 +71,11 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#kontak">Kontak</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </nav>
-        
+
 
         <!-- Page Content -->
         <main class="my-5">
@@ -88,8 +88,9 @@
         <script src="{{ asset('js/app.js') }}"></script>
         @livewireScripts
         <script>
-            $('#mode').click(function (e) { 
+            $('#mode').click(function (e) {
                 e.preventDefault();
+                let icon = '{{ asset("icons/bootstrap-icons.svg") }}';
                 $('.text-mode, label').toggleClass('text-white')
                 if($('body').attr('class') === 'bg-dark'){
                     $('body').attr('class', 'bg-light')
@@ -102,11 +103,11 @@
                     $('#curve').attr('class', 'text-info')
                     $('#kontak').removeClass('bg-secondary')
                     $('#kontak').addClass('bg-info')
-                    $('#mode-icon').attr('xlink:href', '/icons/bootstrap-icons.svg#moon')
+                    $('#mode-icon').attr('xlink:href', icon + '#moon')
                     $('#logo').attr('src', '/img/nama.png')
                 } else {
                     $('body').attr('class', 'bg-dark')
-                    
+
                     $('nav').removeClass('navbar-light')
                     $('nav').removeClass('bg-light')
                     $('nav').addClass('navbar-dark')
@@ -115,10 +116,10 @@
                     $('#curve').attr('class', 'text-secondary')
                     $('#kontak').removeClass('bg-info')
                     $('#kontak').addClass('bg-secondary')
-                    $('#mode-icon').attr('xlink:href', '/icons/bootstrap-icons.svg#lamp')
+                    $('#mode-icon').attr('xlink:href', icon + '#lamp')
                     $('#logo').attr('src', '/img/nama-white.png')
                 }
-                
+
             });
         </script>
     </body>
