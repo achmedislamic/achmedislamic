@@ -18,12 +18,13 @@
         <meta property="og:image" content="https://achmedislamic.com/img/favicon.png" />
         <meta property="og:image:width" content="200" />
         <meta property="og:image:height" content="200" />
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
 
         <link rel="shortcut icon" href="/img/favicon.png">
 
-        <!-- Styles -->
+       <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
@@ -38,22 +39,18 @@
                 -o-transition: 1s;
                 }
         </style>
+
         <!-- Scripts -->
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
+        <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{{ url('/') }}"><img id="logo" width="224px" src="/img/nama.png" alt="Logo Achmed Islamic Hernawan"></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <body class="bg-white px-5 border-blue-600 border-t-8">
+        <nav class="flex bg-white pt-3 mb-16">
+            <a class="" href="{{ url('/') }}"><img id="logo" width="224px" src="/img/nama.png" alt="Logo Achmed Islamic Hernawan"></a>
+            <button class="" type="button">
+                <span class="inline-block w-3 h-3 align-baseline bg-no-repeat bg-[length:100%_100%]"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <ul class="ml-auto mt-2 mt-lg-0 sm:hidden">
                     <li class="nav-item active">
                         <a class="nav-link" href="#" id="mode" title="Hidupkan Dark Mode">
                             <svg class="bi mr-3" width="26" height="26">
@@ -79,11 +76,8 @@
 
         <!-- Page Content -->
         <main class="my-5">
-            {{-- {{ $slot }} --}}
             @yield('konten')
         </main>
-
-        {{-- @stack('modals') --}}
 
         <script src="{{ asset('js/app.js') }}"></script>
         @livewireScripts

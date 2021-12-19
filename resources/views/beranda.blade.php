@@ -5,11 +5,11 @@ Beranda
 @endsection
 
 @section('konten')
-<div class="container my-5 animate__animated animate__fadeInDown">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="text-lg font-weight-bold text-mode">Full-stack web developer & Penulis Blog</div>
-            <div class="text-primary text-lg font-weight-bold accent-color">Selamat datang di situs saya.</div>
+<div class="container mb-10 animate__animated animate__fadeInDown">
+    <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col">
+            <div class="text-lg font-bold leading-relaxed mb-3">Full-stack web developer & Penulis Blog</div>
+            <div class="text-lg font-bold text-blue-500 mb-10">Selamat datang di situs saya.</div>
         </div>
         <div class="col-md-6">
             <img src="/img/hero.png" alt="Hero" class="hero mx-auto">
@@ -18,8 +18,8 @@ Beranda
 </div>
 
 <div class="container my-5 animate__animated animate__fadeInRight">
-    <div class="row">
-        <div class="col">
+    <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col">
             <p class="hero-text text-mode">
                 Assalamualaikum! Perkenalkan saya Achmed. Saya bekerja dalam bidang pembuatan
                 website dan menulis blog.
