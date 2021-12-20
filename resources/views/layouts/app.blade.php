@@ -30,21 +30,21 @@
 
         @livewireStyles
         <style>
-            body, nav {
+            /* body, nav {
                 background: rgb(29, 29, 29);
                 transition: 1s;
                 -webkit-transition: 1s;
                 -moz-transition: 1s;
                 -ms-transition: 1s;
                 -o-transition: 1s;
-                }
+                } */
         </style>
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="bg-white px-5 border-blue-600 border-t-8">
-        <nav class="flex bg-white pt-3 mb-16">
+    <body class="bg-white border-blue-600 border-t-8">
+        <nav class="flex bg-white pt-3 mb-16 px-4 md:px-0">
             <a class="" href="{{ url('/') }}"><img id="logo" width="224px" src="/img/nama.png" alt="Logo Achmed Islamic Hernawan"></a>
             <button class="" type="button">
                 <span class="inline-block w-3 h-3 align-baseline bg-no-repeat bg-[length:100%_100%]"></span>
@@ -75,7 +75,7 @@
 
 
         <!-- Page Content -->
-        <main class="my-5">
+        <main class="flex-grow">
             @yield('konten')
         </main>
 

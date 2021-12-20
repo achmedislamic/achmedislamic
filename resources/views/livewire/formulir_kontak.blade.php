@@ -1,21 +1,21 @@
 <form wire:submit.prevent="simpan" id="form_kontak">
     @csrf
-    <div class="form-group">
-        <label for="nama">Nama Lengkap</label>
-        <input wire:model="nama" required type="text" class="form-control" name="nama" id="nama" placeholder="Isi nama lengkap anda">
+    <x-form-group>
+        <label for="nama" class="text-left mb-2 text-white">Nama Lengkap</label>
+        <input wire:model="nama" required type="text" class="rounded-md border-0" name="nama" id="nama" placeholder="Isi nama lengkap anda">
         @error('nama') <div class="p-3 mb-2 bg-danger text-white">{{ $message }}</div> @enderror
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input wire:model="email" required type="email" class="form-control" name="email" id="email" placeholder="Email anda">
+    </x-form-group>
+    <x-form-group>
+        <label for="email" class="text-left text-white mb-2">Email</label>
+        <input wire:model="email" required type="email" class="rounded-md border-0" name="email" id="email" placeholder="Email anda">
         @error('email') <div class="p-3 mb-2 bg-danger text-white">{{ $message }}</div> @enderror
-    </div>
-    <div class="form-group">
-        <label for="pesan">Pesan</label>
-        <textarea wire:model="pesan" required class="form-control" name="pesan" id="pesan" rows="5"></textarea>
+    </x-form-group>
+    <x-form-group>
+        <label for="pesan" class="text-left text-white mb-2">Pesan</label>
+        <textarea wire:model="pesan" required class="rounded-md border-0" name="pesan" id="pesan" rows="5"></textarea>
         @error('pesan') <div class="p-3 mb-2 bg-danger text-white">{{ $message }}</div> @enderror
-    </div>
-    <button type="submit" class="btn btn-success mb-3">Kirim</button>
+    </x-form-gro>
+    <button type="submit" class="bg-green-600 rounded-lg text-white p-2">Kirim</button>
     <div>
         @if (session()->has('message'))
             <div class="p-3 mb-2 bg-success text-white" id="message">{{ session('message') }}</div>
