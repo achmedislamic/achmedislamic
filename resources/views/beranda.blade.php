@@ -6,12 +6,12 @@ Beranda
 
 @section('konten')
 <div class="container mb-10 animate__animated animate__fadeInDown">
-    <div class="flex flex-col md:flex-row">
-        <div class="flex flex-col">
+    <div class="flex flex-col md:flex-row space-x-3">
+        <div class="flex flex-col w-1/2">
             <div class="text-lg font-bold leading-relaxed mb-3">Full-stack web developer & Penulis Blog</div>
             <div class="text-lg font-bold text-blue-500 mb-10">Selamat datang di situs saya.</div>
         </div>
-        <div class="col-md-6">
+        <div class="w-1/2">
             <img src="/img/hero.png" alt="Hero" class="hero mx-auto">
         </div>
     </div>
