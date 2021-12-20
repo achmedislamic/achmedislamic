@@ -6,10 +6,10 @@ Beranda
 
 @section('konten')
 <div class="container mb-10 animate__animated animate__fadeInDown">
-    <div class="flex flex-col md:flex-row space-x-3">
+    <div class="flex flex-col md:flex-row space-x-2">
         <div class="flex flex-col w-1/2">
             <div class="text-lg font-bold leading-relaxed mb-3">Full-stack web developer & Penulis Blog</div>
-            <div class="text-lg font-bold text-blue-500 mb-10">Selamat datang di situs saya.</div>
+            <div class="text-lg font-bold text-blue-500 leading-relaxed">Selamat datang di situs saya.</div>
         </div>
         <div class="w-1/2">
             <img src="/img/hero.png" alt="Hero" class="hero mx-auto">
@@ -23,10 +23,10 @@ Beranda
             <p class="hero-text text-mode">
                 Assalamualaikum! Perkenalkan saya Achmed. Saya bekerja dalam bidang pembuatan
                 website dan menulis blog.
-                Saya ahli menggunakan <x-anchor href="https://codeigniter.com" target="_blank" >CodeIgniter</x-anchor>
-                dan <x-anchor href="https://laravel.com" target="_blank">Laravel</x-anchor> Framework untuk backend,
-                <x-anchor href="https://getbootstrap.com" target="_blank">Bootstrap</x-anchor> untuk styling dan
-                <x-anchor href="https://jquery.com" target="_blank">jQuery</x-anchor> untuk frontend. Saya juga memiliki blog pribadi yaitu
+                Saya ahli menggunakan <x-anchor href="https://laravel.com" target="_blank">Laravel</x-anchor>
+                & <x-anchor href="https://codeigniter.com" target="_blank" >CodeIgniter</x-anchor> Framework untuk backend,
+                <x-anchor href="https://getbootstrap.com" target="_blank">Bootstrap</x-anchor> & <x-anchor target="_blank" href="https://tailwindcss.com">TailwindCSS</x-anchor> untuk styling dan
+                <x-anchor href="https://jquery.com" target="_blank">jQuery</x-anchor> & <x-anchor target="_blank" href="https://alpinejs.dev">AlpineJS</x-anchor> untuk frontend. Saya juga memiliki blog pribadi yaitu
                 <x-anchor href="https://windowsku.com" target="_blank">Windowsku</x-anchor> dimana saya membagikan pengetahuan saya
                 akan teknologi.
             </p>
@@ -49,69 +49,76 @@ Beranda
                 saya kerjakan:</h2>
             <ul>
 
-                <li class="mb-3 flex flex-row">
-                    <svg class="flex items-start mr-3 text-blue-400 w-[16px] h-[16px]">
+                <li class="mb-3 flex flex-row border border-gray-500 p-2 rounded-lg drop-shadow-xl hover:bg-gray-200">
+                    <svg class="flex-none items-start mr-3 text-blue-500 w-[36px] h-[36px]">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body text-mode">
-                        <h5 class="mt-0 mb-1 font-weight-bold">Sistem Informasi</h5>
-                        Sistem pengelolaan Informasi perusahaan, keuangan, dan manajemen.
-                        Contoh proyek yang telah saya kerjakan adalah sistem informasi perencanaan
-                        <x-anchor href="https://e-planning.ntbprov.go.id" target="_blank">eNTeBePlan</x-anchor> dan
-                        <x-anchor href="https://e-kinerja.ntbprov.go.id" target="_blank">e-Kinerja.</x-anchor>
+                    <div class="flex flex-col">
+                        <h5 class="mt-0 mb-1 font-bold text-md">Sistem Informasi</h5>
+                        <p>
+                            Sistem pengelolaan Informasi perusahaan, keuangan, dan manajemen.
+                            Contoh proyek yang telah saya kerjakan adalah sistem informasi perencanaan
+                            <x-anchor href="https://e-planning.ntbprov.go.id" target="_blank">eNTeBePlan</x-anchor> dan
+                            <x-anchor href="https://e-kinerja.ntbprov.go.id" target="_blank">e-Kinerja.</x-anchor>
+                        </p>
+
                     </div>
                 </li>
 
-                <li class="mb-3 flex items-start">
-                    <svg class="mr-3 w-24 text-blue-500">
+                <li class="mb-3 flex flex-row border border-gray-500 p-2 rounded-lg drop-shadow-xl hover:bg-gray-200">
+                    <svg class="flex-none items-start mr-3 text-blue-500 w-[36px] h-[36px]">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body text-mode">
-                        <h5 class="mt-0 mb-1 font-weight-bold">E-Commerce</h5>
-                        Situs penjualan produk dengan pengiriman barang se-Indonesia dan pembayaran aman
-                        serta dengan dukungan banyak Bank dan metode pembayaran. Contoh proyek yang saya
-                        kerjakan adalah
-                        <a href="https://madurasabuah.com" target="_blank">Madurasabuah.com.</a>
+                    <div class="flex flex-col">
+                        <h5 class="mt-0 mb-1 font-bold text-md">E-Commerce</h5>
+                        <p>
+                            Situs penjualan produk dengan pengiriman barang se-Indonesia dan pembayaran aman
+                            serta dengan dukungan banyak Bank dan metode pembayaran. Contoh proyek yang saya
+                            kerjakan adalah
+                            <x-anchor href="https://madurasabuah.com" target="_blank">Madurasabuah.com.</x-anchor>
+                        </p>
                     </div>
                 </li>
 
-                <li class="mb-3 flex flex-row">
-                    <svg class="bi text-primary mr-3" width="32" height="32">
+                <li class="mb-3 flex flex-row border border-gray-500 p-2 rounded-lg drop-shadow-xl hover:bg-gray-200">
+                    <svg class="flex-none items-start mr-3 text-blue-500 w-[36px] h-[36px]">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body text-mode">
-                        <h5 class="mt-0 mb-1 font-weight-bold">Company Profile dan Portofolio</h5>
-                        Situs Perusahaan yang dapat memperkenalkan produk, kegiatan, dan lain-lain seperti situs ini.
+                    <div class="flex flex-col">
+                        <h5 class="mt-0 mb-1 font-bold text-md">Company Profile dan Portofolio</h5>
+                        <p>Situs Perusahaan yang dapat memperkenalkan produk, kegiatan, dan lain-lain seperti situs ini.</p>
                     </div>
                 </li>
 
-                <li class="mb-3 flex flex-row">
-                    <svg class="bi text-primary mr-3" width="32" height="32">
+                <li class="mb-3 flex flex-row border border-gray-500 p-2 rounded-lg drop-shadow-xl hover:bg-gray-200">
+                    <svg class="flex-none items-start mr-3 text-blue-500 w-[36px] h-[36px]">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body text-mode">
-                        <h5 class="mt-0 mb-1 font-weight-bold">Blog</h5>
-                        Ekspresikan hobi anda dengan menulis di blog yang memiliki fitur lengkap dengan multi-author dan saya bisa bantu anda untuk menghasilkan uang melalui Google Adsense!
+                    <div class="flex flex-col">
+                        <h5 class="mt-0 mb-1 font-bold text-md">Blog</h5>
+                        <p>
+                            Ekspresikan hobi anda dengan menulis di blog yang memiliki fitur lengkap dengan multi-author dan saya bisa bantu anda untuk menghasilkan uang melalui Google Adsense!
+                        </p>
                     </div>
                 </li>
 
-                <li class="mb-3 flex flex-row">
-                    <svg class="bi text-primary mr-3" width="32" height="32">
+                <li class="mb-3 flex flex-row border border-gray-500 p-2 rounded-lg drop-shadow-xl hover:bg-gray-200">
+                    <svg class="flex-none items-start mr-3 text-blue-500 w-[36px] h-[36px]">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body text-mode">
-                        <h5 class="mt-0 mb-1 font-weight-bold">Pembuatan Artikel & SEO Advisor</h5>
+                    <div class="flex flex-col">
+                        <h5 class="mt-0 mb-1 font-bold text-md">Pembuatan Artikel & SEO Advisor</h5>
                         Tak perlu bingung dalam menulis artikel. Berikan saya rangkuman atau highlight artikel anda dan saya siap bantu anda membuat artikel.
                         Saya juga siap membantu situs anda memiliki ranking tinggi di mesin pencari dengan pengalaman SEO saya lebih dari 5 tahun!
                     </div>
                 </li>
 
-                <li class="mb-3 flex flex-row">
-                    <svg class="bi text-primary mr-3" width="32" height="32">
+                <li class="mb-3 flex flex-row border border-gray-500 p-2 rounded-lg drop-shadow-xl hover:bg-gray-200">
+                    <svg class="flex-none items-start mr-3 text-blue-500 w-[36px] h-[36px]">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
-                    <div class="media-body text-mode">
-                        <h5 class="mt-0 mb-1 font-weight-bold">Optimasi Situs Wordpress</h5>
+                    <div class="flex flex-col">
+                        <h5 class="mt-0 mb-1 font-bold text-md">Optimasi Situs Wordpress</h5>
                         Anda punya Website berbasis Wordpress? Dengan pengalaman menggunakan Wordpress lebih dari 5 tahun, saya bisa membantu anda melakukan optimasi sehingga situs anda cepat diakses dan memiliki keamanan yang lebih baik.
                     </div>
                 </li>
