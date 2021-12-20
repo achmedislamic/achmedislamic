@@ -14,8 +14,8 @@
         <label for="pesan" class="text-left text-white mb-2 w-64">Pesan</label>
         <textarea wire:model="pesan" required class="rounded-md border-0 w-full" name="pesan" id="pesan" rows="5" placeholder="Ada pertanyaan, kritik, saran atau proyek kerjasama?"></textarea>
         @error('pesan') <div class="p-3 mb-2 bg-danger text-white">{{ $message }}</div> @enderror
-    </x-form-gro>
-    <button type="submit" class="bg-green-600 rounded-lg text-white p-2">Kirim</button>
+    </x-form-group>
+    <button type="submit" class="bg-green-600 rounded-lg text-white p-2 hover:bg-green-700">Kirim</button>
     <div>
         @if (session()->has('message'))
             <div class="p-3 mb-2 bg-success text-white" id="message">{{ session('message') }}</div>
