@@ -130,7 +130,7 @@ Beranda
         <div class="flex-none w-20 mr-8">
             <img class="rounded-full" src="/img/achmed.jpg" alt="Foto Profil Achmed Islamic Hernawna">
         </div>
-        <div class="flex-auto">
+        <div class="flex-auto my-auto">
             <p>Anda bisa cari informasi tentang saya jika anda
                 <x-anchor target="_blank" href="https://www.google.com/search?source=hp&ei=8E_VX6P8G8HUrtoP7O-IoAw&iflsig=AINFCbYAAAAAX9VeACDjjPlyfmC2ELZrWsOXhiZCrvJR&q=achmed+islamic+hernawan&oq=achmed+islamic+hernawan&gs_lcp=CgZwc3ktYWIQAzIFCCEQoAE6BQguEJMCOgUIABCxAzoICC4QsQMQgwE6AggAOggIABCxAxCDAToLCC4QsQMQgwEQkwI6BQguELEDOggILhCxAxCTAjoCCC46BAgAEAo6BggAEBYQHjoICAAQFhAKEB46BAghEBU6BwghEAoQoAFQ_QdYrRpguhxoAXAAeACAAZwBiAG3FpIBBDIuMjGYAQCgAQGqAQdnd3Mtd2l6sAEA&sclient=psy-ab&ved=0ahUKEwijtJuYysntAhVBqksFHew3AsQQ4dUDCAY&uact=5">
                     mengetik nama lengkap saya di Google.</x-anchor> Seluruh jejak digital dan kontribusi saya di internet bisa anda temukan disana.</p>
@@ -153,10 +153,10 @@ Beranda
     </div>
 </div>
 
-<div class="container pt-4 bg-blue-600 text-white py-4">
+<div class="pt-4 bg-blue-600 text-white py-4">
     <strong class="text-center">
         <p>Situs ini Open Source. Anda bisa clone <x-anchor
-                href="https://github.com/achmedislamic/achmedislamic" target="_blank" class="text-white">repositorynya disini</x-anch>.
+                href="https://github.com/achmedislamic/achmedislamic" target="_blank" color="text-white hover:text-gray-300">repositorynya disini</x-anch>.
         </p>
     </strong>
 </div>

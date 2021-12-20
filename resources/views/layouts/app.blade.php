@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>@yield('judul') - Achmed Islamic H. | Situs Pribadi</title>
+        <title>{{ Illuminate\Support\Facades\App::environment('local') == 'local' ? 'LOCAL ' : '' }}@yield('judul') - Achmed Islamic H. | Situs Pribadi</title>
         <meta name="description" content="Laravel/CodeIgniter dan Bootstrap Web Developer. Programmer berpengalaman selama 4 tahun yang sudah mengerjakan berbagai macam proyek yang siap membuat website untuk anda.." />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
         <link rel="canonical" href="https://achmedislamic.com/" />
@@ -44,7 +44,7 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="bg-white border-blue-600 border-t-8">
-        <nav class="flex bg-white pt-3 mb-16 px-4 md:px-0">
+        <nav class="flex bg-white pt-3 mb-16 px-4">
             <a class="" href="{{ url('/') }}"><img id="logo" width="224px" src="/img/nama.png" alt="Logo Achmed Islamic Hernawan"></a>
             <button class="" type="button">
                 <span class="inline-block w-3 h-3 align-baseline bg-no-repeat bg-[length:100%_100%]"></span>
