@@ -23,11 +23,11 @@ Beranda
             <p class="hero-text text-mode">
                 Assalamualaikum! Perkenalkan saya Achmed. Saya bekerja dalam bidang pembuatan
                 website dan menulis blog.
-                Saya ahli menggunakan <a href="https://codeigniter.com" target="_blank">CodeIgniter</a>
-                dan <a href="https://laravel.com" target="_blank">Laravel</a> Framework untuk backend,
-                <a href="https://getbootstrap.com" target="_blank">Bootstrap</a> untuk styling dan
-                <a href="https://jquery.com" target="_blank">jQuery</a> untuk frontend. Saya juga memiliki blog pribadi yaitu
-                <a href="https://windowsku.com" target="_blank">Windowsku</a> dimana saya membagikan pengetahuan saya
+                Saya ahli menggunakan <x-anchor href="https://codeigniter.com" target="_blank" >CodeIgniter</x-anchor>
+                dan <x-anchor href="https://laravel.com" target="_blank">Laravel</x-anchor> Framework untuk backend,
+                <x-anchor href="https://getbootstrap.com" target="_blank">Bootstrap</x-anchor> untuk styling dan
+                <x-anchor href="https://jquery.com" target="_blank">jQuery</x-anchor> untuk frontend. Saya juga memiliki blog pribadi yaitu
+                <x-anchor href="https://windowsku.com" target="_blank">Windowsku</x-anchor> dimana saya membagikan pengetahuan saya
                 akan teknologi.
             </p>
         </div>
@@ -43,27 +43,27 @@ Beranda
 </div>
 
 <div class="container my-5" id="proyek">
-    <div class="row">
-        <div class="col">
-            <h2 class="mb-3 text-mode"><strong>Anda butuh website?</strong> Saya bisa menerima proyek anda! Berikut daftar proyek yang bisa
+    <div class="flex flex-col">
+        <div>
+            <h2 class="mb-3 text-3xl leading-9"><strong>Anda butuh website?</strong> Saya bisa menerima proyek anda! Berikut daftar proyek yang bisa
                 saya kerjakan:</h2>
-            <ul class="list-unstyled">
+            <ul>
 
-                <li class="media mb-3">
-                    <svg class="bi text-primary mr-3" width="32" height="32">
+                <li class="mb-3 flex flex-row">
+                    <svg class="flex items-start mr-3 text-blue-400 w-[16px] h-[16px]">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
                     <div class="media-body text-mode">
                         <h5 class="mt-0 mb-1 font-weight-bold">Sistem Informasi</h5>
                         Sistem pengelolaan Informasi perusahaan, keuangan, dan manajemen.
                         Contoh proyek yang telah saya kerjakan adalah sistem informasi perencanaan
-                        <a href="https://e-planning.ntbprov.go.id" target="_blank">eNTeBePlan</a> dan
-                        <a href="https://e-kinerja.ntbprov.go.id" target="_blank">e-Kinerja.</a>
+                        <x-anchor href="https://e-planning.ntbprov.go.id" target="_blank">eNTeBePlan</x-anchor> dan
+                        <x-anchor href="https://e-kinerja.ntbprov.go.id" target="_blank">e-Kinerja.</x-anchor>
                     </div>
                 </li>
 
-                <li class="media mb-3">
-                    <svg class="bi text-primary mr-3" width="32" height="32">
+                <li class="mb-3 flex items-start">
+                    <svg class="mr-3 w-24 text-blue-500">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
                     <div class="media-body text-mode">
@@ -75,7 +75,7 @@ Beranda
                     </div>
                 </li>
 
-                <li class="media mb-3">
+                <li class="mb-3 flex flex-row">
                     <svg class="bi text-primary mr-3" width="32" height="32">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
@@ -85,7 +85,7 @@ Beranda
                     </div>
                 </li>
 
-                <li class="media mb-3">
+                <li class="mb-3 flex flex-row">
                     <svg class="bi text-primary mr-3" width="32" height="32">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
@@ -95,7 +95,7 @@ Beranda
                     </div>
                 </li>
 
-                <li class="media mb-3">
+                <li class="mb-3 flex flex-row">
                     <svg class="bi text-primary mr-3" width="32" height="32">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
@@ -106,7 +106,7 @@ Beranda
                     </div>
                 </li>
 
-                <li class="media mb-3">
+                <li class="mb-3 flex flex-row">
                     <svg class="bi text-primary mr-3" width="32" height="32">
                         <use xlink:href="/css/bootstrap-icons.svg#check-circle-fill" />
                     </svg>
