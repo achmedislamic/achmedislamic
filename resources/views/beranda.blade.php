@@ -8,7 +8,7 @@ Beranda
 <div class="container mb-10 px-4 animate__animated animate__fadeInDown">
     <div class="flex flex-col md:flex-row space-x-2">
         <div class="flex flex-col md:w-1/2">
-            <div class="text-lg font-bold leading-relaxed mb-3">Full-stack web developer & Penulis Blog</div>
+            <div class="text-lg font-bold leading-relaxed mb-3 dark:text-white">Full-stack Web Developer & Penulis Blog</div>
             <div class="text-lg font-bold text-blue-500 leading-relaxed">Selamat datang di situs saya.</div>
         </div>
         <div class="md:w-1/2">
@@ -20,7 +20,7 @@ Beranda
 <div class="container my-5 px-4 animate__animated animate__fadeInRight">
     <div class="flex flex-col md:flex-row">
         <div class="flex flex-col">
-            <p class="hero-text text-mode">
+            <p class="hero-text text-mode dark:text-white">
                 Assalamualaikum! Perkenalkan saya Achmed. Saya bekerja dalam bidang pembuatan
                 website dan menulis blog.
                 Saya ahli menggunakan <x-anchor href="https://laravel.com" target="_blank">Laravel</x-anchor>
@@ -42,7 +42,7 @@ Beranda
     </div>
 </div>
 
-<div class="container my-5 px-4" id="proyek">
+<div class="container my-5 px-4 dark:text-white" id="proyek">
     <div class="flex flex-col">
         <div>
             <x-h2><strong>Anda butuh website?</strong> Saya bisa menerima proyek anda! Berikut daftar proyek yang bisa
@@ -90,7 +90,7 @@ Beranda
     </div>
 </div>
 
-<div class="container my-5 px-4">
+<div class="container my-5 px-4 dark:text-white">
     <div class="flex">
         <div>
             <x-h2>Resume Tradisional</x-h2>
@@ -102,17 +102,17 @@ Beranda
     </div>
 </div>
 
-<div class="container my-5 px-4">
+<div class="container my-5 px-4 dark:text-white">
     <div class="flex">
         <div>
             <x-h2>Eiittsss! Ingin tahu situs ini menggunakan teknologi web apa saja?</x-h2>
             <p class="mb-3">Ini dia teknologi yang dipakai di situs pribadi saya ini.</p>
             <ol class="ml-8 my-4 list-decimal">
                 <li>Laravel sebagai Backend</li>
-                <li>TailwindCSS, AlpineJS dan Animate CSS untuk Frontend</li>
-                <li>Livewire untuk form yang dinamis</li>
+                <li>TailwindCSS dan Animate CSS untuk Frontend</li>
+                <li>Livewire dan AlpineJS untuk interaktivitas</li>
                 <li>Bootstrap Icons</li>
-                <li>PHP versi 8.0 terbaru</li>
+                <li>PHP versi 8.0</li>
                 <li>Apache untuk web server</li>
             </ol>
             <p>Bahkan, saya dengan senang hati berbagi source code untuk situs ini.
@@ -123,7 +123,7 @@ Beranda
     </div>
 </div>
 
-<div class="container my-5 px-4">
+<div class="container my-5 px-4 dark:text-white">
     <x-h2>Kepo dengan saya?</x-h2>
 
     <div class="flex">
@@ -138,9 +138,9 @@ Beranda
     </div>
 </div>
 
-<svg fill="currentColor" viewBox="0 0 1695 57" class="text-blue-500"><path d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1c183.6-.1 344.5 7.3 482.8 22v34H0V23z"></path></svg>
+<svg fill="currentColor" viewBox="0 0 1695 57" class="text-blue-500 dark:text-blue-800"><path d="M0 23c135.4 19 289.6 28.5 462.5 28.5C721.9 51.5 936.7 1 1212.2 1c183.6-.1 344.5 7.3 482.8 22v34H0V23z"></path></svg>
 
-<div class="bg-blue-500">
+<div class="bg-blue-500 dark:bg-blue-800" id="kontak">
     <div class="w-full md:max-w-3xl mx-auto py-16 pb-8 text-center textl-xl">
         <x-h2 class="text-white">Sudah pas? Saatnya berbisnis!</x-h2>
         <div class="w-4/5 mx-auto mb-8">

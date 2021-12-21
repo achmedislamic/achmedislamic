@@ -11,7 +11,7 @@ use App\Http\Controllers\KontakController;
 //     return view('welcome');
 // });
 
-Route::get('/', [BerandaController::class, 'index']);
+Route::get('/', [BerandaController::class, 'index'])->name('beranda');
 Route::get('/resume', [ResumeController::class, 'index'])->name('resume');
 Route::get('/resume/pdf', [ResumeController::class, 'pdf'])->name('resume_pdf');
 
