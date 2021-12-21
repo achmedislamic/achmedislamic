@@ -33,8 +33,8 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="bg-white dark:bg-gray-800">
-        <nav class="fixed w-full flex justify-between bg-white dark:bg-gray-800 pt-3 mb-16 px-4 border-t-blue-600 border-b-black border-t-8 z-50 pb-3 backdrop-blur-md bg-white/30 dark:bg-black/30 border-b" x-data="{ menu:false }">
-            <a href="{{ route('beranda') }}" class="pt-3 md:pt-1 mt-1">
+        <nav class="fixed w-full flex justify-between bg-white dark:bg-gray-800 mb-16 border-t-blue-600 border-b-black border-t-8 z-50 backdrop-blur-md bg-white/30 dark:bg-black/30 border-b" x-data="{ menu:true }">
+            <a href="{{ route('beranda') }}" class="ml-4 pt-4 md:py-3">
                 <div class="h-8 w-32 md:w-60 dark:bg-nama-white bg-nama bg-contain bg-no-repeat"></div>
             </a>
 
@@ -68,16 +68,16 @@
                 </div>
             </div>
 
-            <ul class="ml-auto mt-2 mt-lg-0 hidden md:flex md:space-x-8">
-                <li class="nav-item active">
+            <ul class="mt-lg-0 hidden md:flex md:flex-row md:items-center">
+                <li class="hover:dark:bg-gray-700 h-full flex md:items-center px-3 hover:rounded-md">
                     <a class="dark:text-white font-bold text-md" href="#profil">Profil</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="dark:text-white font-bold text-md scroll-mt-24" href="#proyek">Proyek</a>
+                <li class="hover:dark:bg-gray-700 h-full flex md:items-center px-3 hover:rounded-md">
+                    <a class="dark:text-white font-bold text-md" href="#proyek">Proyek</a>
                 </li>
 
-                <li class="nav-item active">
-                    <a class="dark:text-white font-bold text-md scroll-mt-24" href="#kontak">Kontak</a>
+                <li class="hover:dark:bg-gray-700 h-full flex md:items-center px-3 hover:rounded-md">
+                    <a class="dark:text-white font-bold text-md" href="#kontak">Kontak</a>
                 </li>
 
             </ul>
