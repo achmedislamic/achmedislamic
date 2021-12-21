@@ -16,6 +16,12 @@ module.exports = {
             fontFamily: {
                 sans: ["Nunito", ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+                "nama-white": "url('/img/nama-white.png')",
+                "nama": "url('/img/nama.png')",
+                "ilustrasi-dark": "url('/img/ilustrasi-tall-stack-dark.png')",
+                "ilustrasi": "url('/img/ilustrasi-tall-stack.png')",
+            },
         },
     },
 

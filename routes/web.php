@@ -6,11 +6,6 @@ use App\Http\Controllers\ProyekController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\KontakController;
 
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [BerandaController::class, 'index'])->name('beranda');
 Route::get('/resume', [ResumeController::class, 'index'])->name('resume');
 Route::get('/resume/pdf', [ResumeController::class, 'pdf'])->name('resume_pdf');
