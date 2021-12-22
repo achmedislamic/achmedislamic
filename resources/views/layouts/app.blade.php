@@ -33,7 +33,7 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="bg-white dark:bg-gray-800">
-        <nav class="fixed w-full flex justify-between bg-white dark:bg-gray-800 mb-16 border-t-blue-600 border-b-black border-t-8 z-50 backdrop-blur-md bg-white/30 dark:bg-black/30 border-b" x-data="{ menu:true }">
+        <nav class="fixed w-full flex justify-between bg-white dark:bg-gray-800 mb-16 border-t-blue-600 border-b-black border-t-8 z-50 backdrop-blur-md bg-white/30 dark:bg-black/30 border-b" x-data="{ menu:false }">
             <a href="{{ route('beranda') }}" class="ml-4 pt-4 md:py-3">
                 <div class="h-8 w-32 md:w-60 dark:bg-nama-white bg-nama bg-contain bg-no-repeat"></div>
             </a>
