@@ -32,10 +32,6 @@ class FormulirKontak extends Component
 
         $this->reset(['nama', 'email', 'pesan']);
     }
-    public function render()
-    {
-        return view('livewire.formulir_kontak');
-    }
 
     public function getKontakProperty()
     {

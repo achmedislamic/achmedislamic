@@ -91,40 +91,5 @@
 
         @livewireScripts
         <script src="{{ asset('js/app.js') }}"></script>
-        <script>
-            $('#mode').click(function (e) {
-                e.preventDefault();
-                let icon = '{{ asset("css/bootstrap-icons.svg") }}';
-                $('.text-mode, label').toggleClass('text-white')
-                if($('body').attr('class') === 'bg-dark'){
-                    $('body').attr('class', 'bg-light')
-
-                    $('nav').removeClass('navbar-dark')
-                    $('nav').removeClass('bg-dark')
-                    $('nav').addClass('navbar-light')
-                    $('nav').addClass('bg-light')
-
-                    $('#curve').attr('class', 'text-info')
-                    $('#kontak').removeClass('bg-secondary')
-                    $('#kontak').addClass('bg-info')
-                    $('#mode-icon').attr('xlink:href', icon + '#moon')
-                    $('#logo').attr('src', '/img/nama.png')
-                } else {
-                    $('body').attr('class', 'bg-dark')
-
-                    $('nav').removeClass('navbar-light')
-                    $('nav').removeClass('bg-light')
-                    $('nav').addClass('navbar-dark')
-                    $('nav').addClass('bg-dark')
-
-                    $('#curve').attr('class', 'text-secondary')
-                    $('#kontak').removeClass('bg-info')
-                    $('#kontak').addClass('bg-secondary')
-                    $('#mode-icon').attr('xlink:href', icon + '#lamp')
-                    $('#logo').attr('src', '/img/nama-white.png')
-                }
-
-            });
-        </script>
     </body>
 </html>

@@ -5,7 +5,7 @@ Beranda
 @endsection
 
 @section('konten')
-<div class="container mb-10 px-4 animate__animated animate__fadeInDown scroll-mt-24" id="profil">
+<div class="container mb-10 px-4 scroll-mt-24" id="profil">
     <div class="flex flex-col md:flex-row space-x-2">
         <div class="flex flex-col md:w-1/2">
             <div class="text-lg font-bold leading-relaxed mb-3 dark:text-white">Full-stack Web Developer & Penulis Blog</div>
@@ -17,7 +17,7 @@ Beranda
     </div>
 </div>
 
-<div class="container my-5 px-4 animate__animated animate__fadeInRight">
+<div class="container my-5 px-4">
     <div class="flex flex-col md:flex-row">
         <div class="flex flex-col">
             <p class="hero-text text-mode dark:text-white">
@@ -32,7 +32,7 @@ Beranda
     </div>
 </div>
 
-<div class="container my-5 px-4 flex animate__animated animate__fadeInLeft animate__delay-1s">
+<div class="container my-5 px-4 flex">
     <div class="h-32 sm:h-48 md:h-80 w-full bg-center dark:bg-ilustrasi-dark bg-ilustrasi bg-contain bg-no-repeat"></div>
 </div>
 
