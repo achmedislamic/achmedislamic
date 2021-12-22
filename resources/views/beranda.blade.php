@@ -100,7 +100,7 @@ Beranda
             <p class="mb-3">Ini dia teknologi yang dipakai di situs pribadi saya ini.</p>
             <ol class="ml-8 my-4 list-decimal space-y-2">
                 <li>Laravel sebagai Backend</li>
-                <li>TailwindCSS untuk styling dan AlpineJS untuk interaktivitas</li>
+                <li>TailwindCSS untuk styling</li>
                 <li>Livewire dan AlpineJS untuk interaktivitas</li>
                 <li>Bootstrap Icons</li>
                 <li>PHP versi 8.1 terbaru</li>
