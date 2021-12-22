@@ -22,10 +22,7 @@ Beranda
         <div class="flex flex-col">
             <p class="hero-text text-mode dark:text-white">
                 Hai! Perkenalkan saya Achmed. Saya bekerja di bidang pembuatan website dan menulis blog.
-                Saya biasa menggunakan <x-anchor href="https://laravel.com" target="_blank">Laravel</x-anchor>
-                & <x-anchor href="https://codeigniter.com" target="_blank" >CodeIgniter</x-anchor> Framework untuk backend,
-                <x-anchor href="https://getbootstrap.com" target="_blank">Bootstrap</x-anchor> & <x-anchor target="_blank" href="https://tailwindcss.com">TailwindCSS</x-anchor> untuk styling dan
-                <x-anchor href="https://jquery.com" target="_blank">jQuery</x-anchor> & <x-anchor target="_blank" href="https://alpinejs.dev">AlpineJS</x-anchor> untuk interaktivitas. Saat ini, saya menggunakan <i>Technology Stack</i> bernama <b>TALL Stack</b> untuk membuat Website. Saya juga memiliki blog pribadi yaitu
+                Saya saat ini menggunakan tools modern untuk membuat website yaitu <i>TALL Stack</i> yang terdiri dari <x-anchor target="_blank" href="https://tailwindcss.com">TailwindCSS</x-anchor> untuk <i>styling,</i> <x-anchor target="_blank" href="https://alpinejs.dev">AlpineJS</x-anchor> untuk interaktivitas di tampilan depan, <x-anchor href="https://laravel-livewire.com" target="_blank">Livewire</x-anchor> untuk interaktivitas dari <i>Backend</i> ke tampilan depan dan <x-anchor href="https://laravel.com" target="_blank">Laravel</x-anchor> Framework untuk backend. Saya juga memiliki blog pribadi yaitu
                 <x-anchor href="https://windowsku.com" target="_blank">Windowsku</x-anchor> dimana saya menulis tentang teknologi.
             </p>
         </div>
@@ -103,10 +100,10 @@ Beranda
             <p class="mb-3">Ini dia teknologi yang dipakai di situs pribadi saya ini.</p>
             <ol class="ml-8 my-4 list-decimal space-y-2">
                 <li>Laravel sebagai Backend</li>
-                <li>TailwindCSS dan Animate CSS untuk Frontend</li>
+                <li>TailwindCSS untuk styling dan AlpineJS untuk interaktivitas</li>
                 <li>Livewire dan AlpineJS untuk interaktivitas</li>
                 <li>Bootstrap Icons</li>
-                <li>PHP versi 8.0</li>
+                <li>PHP versi 8.1 terbaru</li>
                 <li>Apache untuk web server</li>
             </ol>
             <p>Bahkan, saya dengan senang hati berbagi source code untuk situs ini.
