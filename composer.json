@@ -16,7 +16,8 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "livewire/livewire": "^2.5",
-        "symfony/event-dispatcher": "5.4.x"
+        "symfony/event-dispatcher": "5.4.x",
+        "wireui/wireui": "^0.15.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
