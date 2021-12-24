@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
-use App\Http\Controllers\ProyekController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\KontakController;
 
