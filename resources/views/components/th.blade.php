@@ -1,4 +1,4 @@
-@props(['sortBy', 'sortField'])
+@props(['sortBy', 'sortField', 'sortAsc'])
 
 <th class="border border-1 border-green-600 p-2">
   <x-button flat spinner="sortBy('{{ $sortBy }}')" wire:click="sortBy('{{ $sortBy }}')">

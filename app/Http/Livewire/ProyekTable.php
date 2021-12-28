@@ -13,7 +13,15 @@ class ProyekTable extends Component
     public $confirming;
     public $search;
     public $rows = 10;
+    public $modal = false;
+    public Proyek $proyek;
     protected $queryString = ['search', 'sortAsc', 'sortField'];
+
+    public function bukaModal(Proyek $proyek)
+    {
+        $this->proyek = $proyek;
+        $this->modal = true;
+    }
 
     public function render()
     {
