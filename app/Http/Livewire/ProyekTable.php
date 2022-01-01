@@ -17,10 +17,34 @@ class ProyekTable extends Component
     public Proyek $proyek;
     protected $queryString = ['search', 'sortAsc', 'sortField'];
 
+    protected $rules = [
+        'proyek.judul' => 'required'
+    ];
+
+    public function mount()
+    {
+        $this->proyek = new Proyek();
+    }
+
+    public function simpan()
+    {
+        $this->validate();
+
+        $this->proyek->save();
+
+        $this->tutupModal();
+    }
+
     public function bukaModal(Proyek $proyek)
     {
         $this->proyek = $proyek;
         $this->modal = true;
+    }
+
+    public function tutupModal()
+    {
+        $this->modal = false;
+        $this->proyek = new Proyek();
     }
 
     public function render()

@@ -5,58 +5,49 @@
 </x-slot>
 
 <div class="container mt-5">
-    <x-modal.card title="Edit Customer" blur wire:model.defer="modal">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <x-input label="Name" placeholder="Your full name" />
-            <x-input label="Phone" placeholder="USA phone" />
+    <form wire:submit.prevent="simpan">
+    <x-modal.card title="Proyek" wire:model.defer="modal" blur>
 
-            <div class="col-span-1 sm:col-span-2">
-                <x-input label="Email" placeholder="example@mail.com" />
+            <div class="flex flex-col space-y-3 mx-2">
+                <x-input label="Judul Proyek" wire:model="proyek.judul" />
             </div>
 
-            <div class="col-span-1 sm:col-span-2 cursor-pointer bg-gray-100 rounded-xl shadow-md h-72 flex items-center justify-center">
-                <div class="flex flex-col items-center justify-center">
-                    <x-icon name="cloud-upload" class="w-16 h-16 text-blue-600" />
-                    <p class="text-blue-600">Click or drop files here</p>
+            <x-slot name="footer">
+                <div class="flex flex-row">
+                    <div class="ml-auto flex flex-row">
+                        <x-button flat label="Cancel" x-on:click="close" />
+                        <x-button label="Simpan" type="submit" primary />
+                    </div>
                 </div>
-            </div>
-        </div>
+            </x-slot>
 
-        <x-slot name="footer">
-            <div class="flex justify-between gap-x-4">
-                <x-button flat negative label="Delete" wire:click="delete" />
 
-                <div class="flex">
-                    <x-button flat label="Cancel" x-on:click="close" />
-                    <x-button primary label="Save" wire:click="save" />
-                </div>
-            </div>
-        </x-slot>
     </x-modal.card>
+    </form>
     <x-card>
-        <div class="flex flex-col">
+        <div class="flex flex-col px-2">
             <div>
                 <x-button label="Tambah" onclick="$openModal('modal')" positive />
             </div>
-            <table class="table-auto">
+            <table class="table-auto mt-3 shadow rounded-lg overflow-hidden">
                 <thead>
                     <tr>
-                        <x-th sortBy="judul" :sortField="$sortField" :sortAsc="$sortAsc">Proyek</x-th>
-                        <th>Aksi</th>
+                        <x-th-sort sortBy="judul" :sortField="$sortField" :sortAsc="$sortAsc">Proyek</x-th-sort>
+                        <x-th>Aksi</x-th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($proyeks as $proyek)
                         <tr>
-                            <td>{{ $proyek->judul }}</td>
-                            <td>
+                            <x-td>{{ $proyek->judul }}</x-td>
+                            <x-td>
                                 <x-button warning wire:click="bukaModal({{ $proyek->id }})" label="Ubah" />
                                 @if($confirming === $proyek->id)
                                     <x-button label="Anda yakin?" wire:click="destroy({{ $proyek->id }})" danger />
                                 @else
-                                    <x-button label="Hapus" wire:click="confirmDelete({{ $proyek->id }})" warning />
+                                    <x-button label="Hapus" wire:click="confirmDelete({{ $proyek->id }})" dark />
                                 @endif
-                            </td>
+                            </x-td>
                         </tr>
 
                     @endforeach
