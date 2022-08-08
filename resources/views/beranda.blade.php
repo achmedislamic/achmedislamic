@@ -113,7 +113,7 @@ Beranda
     <div class="flex">
         <div>
             <x-h2>E-Book</x-h2>
-            <div class="flex flex-col justify-center md:flex-row w-full mt-8 space-x-3">
+            <div class="flex flex-col justify-center md:flex-row w-full mt-8 md:space-x-3">
                 <div class="w-full md:w-1/2 my-2">
                     <a href="https://windowsku.com/10-tips-cara-belajar-menggunakan-excel-cepat/" target="_blank">
                         <img src="{{ asset('img/excel.webp') }}" class="block w-full h-auto
