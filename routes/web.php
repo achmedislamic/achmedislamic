@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ResumeController;
-use App\Http\Controllers\KontakController;
 
 Route::get('/', [BerandaController::class, 'index'])->name('beranda');
 Route::get('/resume', [ResumeController::class, 'index'])->name('resume');
