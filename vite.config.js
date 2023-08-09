@@ -10,13 +10,12 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
             ],
+            refresh: false,
         }),
 
         livewire({
-            refresh: [
-                'resources/css/app.css',
-                'resources/js/app.js',
-            ],  // <-- will refresh css (tailwind ) as well
+            // refresh css (tailwind ) as well
+            refresh: ['resources/css/app.css'],
         }),
     ],
 });

@@ -3,10 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ResumeController;
+use App\Http\Livewire\PembuatanSitus;
 
 Route::get('/', [BerandaController::class, 'index'])->name('beranda');
 Route::get('/resume', [ResumeController::class, 'index'])->name('resume');
 Route::get('/resume/pdf', [ResumeController::class, 'pdf'])->name('resume_pdf');
+Route::get('/jasa-pembuatan-situs-web', PembuatanSitus::class)->name('pembuatan-situs');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
