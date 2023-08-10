@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ Illuminate\Support\Facades\App::environment('local') == 'local' ? 'LOCAL ' : '' }}@yield('judul') - Achmed
@@ -33,16 +33,18 @@
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
     @livewireStyles
+    @stack('styles')
 </head>
 
 <body class="bg-white dark:bg-gray-800">
     @yield('nav')
 
     <!-- Page Content -->
-    <main class="flex-grow pt-24">
+    <main class="flex-grow">
         @yield('konten')
     </main>
 
+    <wireui:scripts />
     @vite(['resources/js/app.js'])
     @livewireScripts
 </body>

@@ -2,7 +2,9 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
 export default {
-    presets: [require('./vendor/wireui/wireui/tailwind.config.js')],
+    presets: [
+        require('./vendor/wireui/wireui/tailwind.config.js')
+    ],
     content: [
         "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
         "./vendor/laravel/jetstream/**/*.blade.php",
@@ -27,6 +29,7 @@ export default {
                 nama: "url('../../public/img/nama.png')",
                 "ilustrasi-dark": "url('../../public/img/ilustrasi-tall-stack-dark.png')",
                 ilustrasi: "url('../../public/img/ilustrasi-tall-stack.png')",
+                "digital-marketing": "url('../../public/img/digitalmarketing.jpg')",
             },
         },
     },

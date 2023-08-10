@@ -63,7 +63,7 @@
 @endsection
 
 @section('konten')
-    <div class="container mb-10 px-4 scroll-mt-24" id="profil">
+    <div class="container mb-10 px-4 scroll-mt-24 pt-24" id="profil">
         <div class="flex flex-col md:flex-row space-x-2">
             <div class="flex flex-col md:w-1/2">
                 <div class="text-lg font-bold leading-relaxed mb-3 dark:text-white">Full-stack Web Developer & Penulis Blog
