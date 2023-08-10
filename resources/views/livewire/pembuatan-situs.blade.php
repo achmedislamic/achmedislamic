@@ -76,7 +76,7 @@
 
     <section class="mx-auto max-w-screen-lg mb-10 px-4 scroll-mt-24 mt-8">
         <div class="flex flex-col md:flex-row space-x-2">
-            <h2 class="text-2xl md:text-4xl text-center font-bold mb-3 dark:text-white underline decoration-blue-500 underline-offset-4">Ada banyak alasan kenapa Anda harus memiliki situs web!
+            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Ada banyak alasan kenapa Anda harus memiliki situs web!
             </h2>
         </div>
     </section>
@@ -201,7 +201,7 @@
 
     <section class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
         <div class="flex flex-col space-x-2 pb-5">
-            <h2 class="mx-auto text-4xl font-bold dark:text-black underline decoration-blue-500 underline-offset-4 my-5">Kenapa Memilih Kami?
+            <h2 class="my-4 text-center text-2xl text-white lg:text-3xl xl:mb-12">Kenapa Memilih Kami?
             </h2>
             <div class="flex flex-col space-y-3">
                 <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 items-center justify-center">
@@ -256,7 +256,7 @@
                             <a href="#">
                                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Situs Web yang Anda miliki milik Anda sepenuhnya!</h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Tidak seperti yang lain, Anda tidak perlu komitmen pembayaran secara berkala apapun di kami. Beli sekali, situs web tersebut milik Anda sepenuhnya!</p>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Tidak seperti yang lain, Anda tidak perlu komitmen pembayaran bulanan atau tahunan. Beli sekali, situs web tersebut milik Anda sepenuhnya!</p>
                             </p>
                             <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Read more
@@ -277,9 +277,9 @@
                         </a>
                         <div class="p-5">
                             <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Bisa memilih tempat Hosting sesuai kebutuhan dan harga!</h5>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tempat Hosting bisa pilih sendiri, di mulai dari Rp. 12.500 per bulan!</h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Hosting diperlukan agar situs web Anda bisa diakses oleh seluruh dunia. Anda bisa memilih sendiri di tempat-termpat terpercaya seperti Hostinger, Niagahoster, Rumahweb, Domainesia, IDCloudhost, dll!</p>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Hosting berfungsi sebagai tempat Anda menyimpan situs agar bisa diakses orang di seluruh dunia. Tidak seperti yang lain, kami hanya mengambil jasa pembuatan situs saja sehingga harga sangat terjangkau!</p>
                             </p>
                             <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                                 Read more
@@ -380,7 +380,7 @@
                             </div>
 
                             <div class="mt-auto">
-                                <a href="#" class="block rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:text-gray-700 md:text-base">Rp. 1.000.000 s/d Rp. 2.000.000</a>
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:text-gray-700 md:text-base">Rp. 1.000.000 s/d Rp. 2.000.000</a>
                             </div>
                         </div>
                     </div>
@@ -430,13 +430,20 @@
                             </div>
 
                             <div class="mt-auto">
-                                <a href="#" class="block rounded-lg bg-orange-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-orange-800 focus-visible:ring active:bg-gray-600 md:text-base">Hubungi Kami</a>
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-orange-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-orange-800 focus-visible:ring active:bg-gray-600 md:text-base">Hubungi Kami</a>
                             </div>
                         </div>
                     </div>
                     <!-- plan - end -->
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 drop-shadow-lg bg-slate-200">
+        <div class="flex flex-col space-y-3">
+            <h2 class="my-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Tunggu Apa Lagi, Segera Pesan!</h2>
+            <p class="text-center">Segera hubungi kami dengan mengklik tombol di bawah ini</p>
         </div>
     </section>
 @endsection
