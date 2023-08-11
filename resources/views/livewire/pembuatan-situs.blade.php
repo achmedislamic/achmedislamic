@@ -116,7 +116,7 @@
 
     <section id="pilih-kami" class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
         <div class="flex flex-col space-x-2 pb-5">
-            <h2 class="my-4 text-center text-2xl text-white lg:text-3xl xl:mb-12">Kenapa Memilih Kami?
+            <h2 class="my-6 text-center text-2xl text-white lg:text-3xl xl:mb-12">Kenapa Memilih Kami?
             </h2>
             <div class="flex flex-col space-y-3">
                 <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 items-center justify-center">
@@ -265,7 +265,7 @@
                             </div>
 
                             <div class="mt-auto">
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:text-gray-700 md:text-base">Rp. 1.000.000 s/d Rp. 2.000.000</a>
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:text-gray-700 md:text-base">Rp. 1.200.000 s/d Rp. 2.200.000</a>
                             </div>
                         </div>
                     </div>
@@ -328,7 +328,7 @@
     <section class="mx-auto px-4 scroll-mt-24 mt-8 drop-shadow-lg bg-red-500 text-white">
         <div class="flex flex-col space-y-3 pb-5">
             <h2 class="my-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">Tunggu Apa Lagi, Segera Pesan!</h2>
-            <p class="text-center">Segera hubungi kami dengan mengklik tombol di bawah ini</p>
+            <p class="text-center">Segera hubungi kami dengan menyentuh tombol di bawah ini</p>
             <div class="flex items-center justify-center">
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-orange-800 focus-visible:ring active:bg-gray-600 md:text-base w-52">Hubungi Kami</a>
             </div>
