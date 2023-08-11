@@ -1,6 +1,26 @@
 {
+  "public/img/digitalmarketing.jpg": {
+    "file": "assets/digitalmarketing-443d5615.jpg",
+    "src": "public/img/digitalmarketing.jpg"
+  },
+  "public/img/ilustrasi-tall-stack-dark.png": {
+    "file": "assets/ilustrasi-tall-stack-dark-0ca1aae7.png",
+    "src": "public/img/ilustrasi-tall-stack-dark.png"
+  },
+  "public/img/ilustrasi-tall-stack.png": {
+    "file": "assets/ilustrasi-tall-stack-d9d02338.png",
+    "src": "public/img/ilustrasi-tall-stack.png"
+  },
+  "public/img/nama-white.png": {
+    "file": "assets/nama-white-fff9e9e1.png",
+    "src": "public/img/nama-white.png"
+  },
+  "public/img/nama.png": {
+    "file": "assets/nama-4acb82e9.png",
+    "src": "public/img/nama.png"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-1edaa23d.css",
+    "file": "assets/app-24925268.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
