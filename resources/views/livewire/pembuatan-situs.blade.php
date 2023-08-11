@@ -41,27 +41,27 @@
             <div :class="menu ? '' : 'hidden'" x-transition x-cloak class="items-center justify-between w-full md:flex md:w-auto md:order-1">
                 <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
                     <li>
-                        <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+                        <a href="#beranda" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Beranda</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        <a href="#punya-situs-web" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Harus Punya Situs Web?</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                        <a href="#pilih-kami" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Memilih Kami?</a>
                     </li>
                     <li>
-                        <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        <a href="#paket-situs-web" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Paket Situs Web</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="bg-center bg-cover bg-no-repeat bg-digital-marketing bg-gray-700 bg-blend-multiply">
+    <section id="beranda" class="bg-center bg-cover bg-no-repeat bg-digital-marketing bg-gray-700 bg-blend-multiply">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Buat Situs Web Murah & Berkualitas!</h1>
-            <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl/10 sm:px-16 lg:px-48">
-                Perkenalkan diri atau bisnis Anda ke seluruh dunia dengan situs web hari ini juga!
+            <p class="mb-8 text-xl/relaxed font-normal text-gray-300 lg:text-xl/10 sm:px-16 lg:px-48">
+                Perkenalkan diri atau bisnis Anda ke seluruh dunia dengan situs web sekarang juga!
             </p>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
                 <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
@@ -74,132 +74,47 @@
         </div>
     </section>
 
-    <section class="mx-auto max-w-screen-lg mb-10 px-4 scroll-mt-24 mt-8">
-        <div class="flex flex-col md:flex-row space-x-2">
-            <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Ada banyak alasan kenapa Anda harus memiliki situs web!
+    <section id="punya-situs-web" class="mx-auto max-w-screen-2xl mb-10 px-4 scroll-mt-24 mt-8">
+        <div class="flex flex-col space-y-3">
+            <h2 class="my-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Ada banyak alasan kenapa Anda harus memiliki situs web!
             </h2>
+            <div class="flex flex-col md:space-y-3">
+                <ol class="items-center sm:flex">
+                    <x-vertical-timeline title="Meningkatkan Kredibilitas">
+                        Kepercayaan orang atau pelanggan terhadap Anda dan bisnis Anda pastinya meningkat dengan adanya situs web
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Media Promosi">
+                        Karena situs web dapat diakses oleh semua orang, situs web menjadi cara yang tepat untuk melakukan promosi
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Menghemat Waktu">
+                        Anda tidak perlu menjelaskan panjang lebar ke konsumen, cukup berikan alamat situs web Anda dan selesai
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Tampilan Menarik">
+                        Anda atau bisnis Anda akan semakin mudah diingat berkat situs web yang tampilannya bisa diatur sesuai selera
+                    </x-vertical-timeline>
+                </ol>
+
+                <ol class="items-center sm:flex">
+                    <x-vertical-timeline title="Dapat Diakses 24 Jam">
+                        Malam hari tentu waktunya untuk tidur, tapi tidak untuk situs web Anda.
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Meningkatkan Penjualan">
+                        Dengan berbagai keunggulan promosi yang ditawarkan situs web, penjualan toko offline maupun online menjadi meningkat
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Meningkatkan Karir">
+                        Seseorang yang memiliki situs web pribadi lebih dilihat oleh rekruter dibandingkan sebaliknya
+                    </x-vertical-timeline>
+                </ol>
+            </div>
         </div>
     </section>
 
-    <section class="mx-auto max-w-screen-2xl mb-10 px-4 scroll-mt-24 mt-8">
-        <ol class="items-center sm:flex">
-            <li class="relative mb-6 sm:mb-0">
-                <div class="flex items-center">
-                    <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                        </svg>
-                    </div>
-                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-                </div>
-                <div class="mt-3 sm:pr-8 space-y-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Meningkatkan Kredibilitas</h3>
-                    <time class="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
-                </div>
-            </li>
-
-            <li class="relative mb-6 sm:mb-0">
-                <div class="flex items-center">
-                    <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                        </svg>
-                    </div>
-                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-                </div>
-                <div class="mt-3 sm:pr-8 space-y-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Meningkatkan Kredibilitas</h3>
-                    <time class="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
-                </div>
-            </li>
-
-            <li class="relative mb-6 sm:mb-0">
-                <div class="flex items-center">
-                    <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                        </svg>
-                    </div>
-                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-                </div>
-                <div class="mt-3 sm:pr-8 space-y-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Meningkatkan Kredibilitas</h3>
-                    <time class="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
-                </div>
-            </li>
-
-            <li class="relative mb-6 sm:mb-0">
-                <div class="flex items-center">
-                    <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                        </svg>
-                    </div>
-                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-                </div>
-                <div class="mt-3 sm:pr-8 space-y-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Meningkatkan Kredibilitas</h3>
-                    <time class="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
-                </div>
-            </li>
-        </ol>
-
-        <ol class="items-center sm:flex mt-5">
-            <li class="relative mb-6 sm:mb-0">
-                <div class="flex items-center">
-                    <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                        </svg>
-                    </div>
-                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-                </div>
-                <div class="mt-3 sm:pr-8 space-y-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Meningkatkan Kredibilitas</h3>
-                    <time class="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
-                </div>
-            </li>
-
-            <li class="relative mb-6 sm:mb-0">
-                <div class="flex items-center">
-                    <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                        </svg>
-                    </div>
-                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-                </div>
-                <div class="mt-3 sm:pr-8 space-y-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Meningkatkan Kredibilitas</h3>
-                    <time class="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
-                </div>
-            </li>
-
-            <li class="relative mb-6 sm:mb-0">
-                <div class="flex items-center">
-                    <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
-                        <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-                        </svg>
-                    </div>
-                    <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-                </div>
-                <div class="mt-3 sm:pr-8 space-y-3">
-                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Meningkatkan Kredibilitas</h3>
-                    <time class="block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Released on December 2, 2021</time>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400">Get started with dozens of web components and interactive elements.</p>
-                </div>
-            </li>
-        </ol>
-    </section>
-
-    <section class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
+    <section id="pilih-kami" class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
         <div class="flex flex-col space-x-2 pb-5">
             <h2 class="my-4 text-center text-2xl text-white lg:text-3xl xl:mb-12">Kenapa Memilih Kami?
             </h2>
@@ -216,12 +131,6 @@
                             </a>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Apapun perangkatnya: Smartphone, Tablet, Komputer Desktop, Laptop, Netbook, dan perangkat lainnya yang punya internet dan layar, pastinya bisa mengakses situs Anda!</p>
                             </p>
-                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Read more
-                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                     {{-- end card --}}
@@ -237,12 +146,6 @@
                             </a>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Apapun perangkatnya: Smartphone, Tablet, Komputer Desktop, Laptop, Netbook, dan perangkat lainnya yang punya internet dan layar, pastinya bisa mengakses situs Anda!</p>
                             </p>
-                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Read more
-                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                     {{-- end card --}}
@@ -254,16 +157,10 @@
                         </a>
                         <div class="p-5">
                             <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Situs Web yang Anda miliki milik Anda sepenuhnya!</h5>
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Situs Web yang Anda bayar milik Anda sepenuhnya!</h5>
                             </a>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Tidak seperti yang lain, Anda tidak perlu komitmen pembayaran bulanan atau tahunan. Beli sekali, situs web tersebut milik Anda sepenuhnya!</p>
                             </p>
-                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Read more
-                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                     {{-- end card --}}
@@ -281,12 +178,6 @@
                             </a>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Hosting berfungsi sebagai tempat Anda menyimpan situs agar bisa diakses orang di seluruh dunia. Tidak seperti yang lain, kami hanya mengambil jasa pembuatan situs saja sehingga harga sangat terjangkau!</p>
                             </p>
-                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Read more
-                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                     {{-- end card --}}
@@ -300,14 +191,8 @@
                             <a href="#">
                                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pelayanan 100% hingga situs web bisa diakses seluruh dunia dan bergaransi!</h5>
                             </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Memastikan situs web berjalan dengan baik dan garansi selama 6 bulan untuk situs web standar dan 1 tahun untuk situs web berkebutuhan khusus!</p>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Garansi selama 6 bulan untuk situs web standar dan 1 tahun untuk situs web berkebutuhan khusus yang meliputi perbaikan kesalahan maupun konfigurasi hosting!</p>
                             </p>
-                            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                Read more
-                                <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg>
-                            </a>
                         </div>
                     </div>
                     {{-- end card --}}
@@ -316,7 +201,7 @@
         </div>
     </section>
 
-    <section class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 text-white drop-shadow-lg">
+    <section id="paket-situs-web" class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 text-white">
         <div class="bg-white py-6 sm:py-8 lg:py-12">
             <div class="mx-auto max-w-screen-xl px-4 md:px-8">
                 <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Yuk Pilih Paket Situs Web Anda!</h2>
@@ -440,10 +325,13 @@
         </div>
     </section>
 
-    <section class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 drop-shadow-lg bg-slate-200">
-        <div class="flex flex-col space-y-3">
-            <h2 class="my-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12 text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Tunggu Apa Lagi, Segera Pesan!</h2>
+    <section class="mx-auto px-4 scroll-mt-24 mt-8 drop-shadow-lg bg-red-500 text-white">
+        <div class="flex flex-col space-y-3 pb-5">
+            <h2 class="my-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">Tunggu Apa Lagi, Segera Pesan!</h2>
             <p class="text-center">Segera hubungi kami dengan mengklik tombol di bawah ini</p>
+            <div class="flex items-center justify-center">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-orange-800 focus-visible:ring active:bg-gray-600 md:text-base w-52">Hubungi Kami</a>
+            </div>
         </div>
     </section>
 @endsection
