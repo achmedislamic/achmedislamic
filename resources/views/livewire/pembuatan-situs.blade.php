@@ -57,64 +57,39 @@
         </div>
     </nav>
 
-    <section id="beranda" class="bg-center bg-cover bg-no-repeat bg-digital-marketing bg-gray-700 bg-blend-multiply">
+    <section id="beranda" class="bg-gradient-to-r from-slate-100 to-slate-200">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Buat Situs Web Murah & Berkualitas!</h1>
-            <p class="mb-8 text-xl/relaxed font-normal text-gray-300 lg:text-xl/10 sm:px-16 lg:px-48">
+            <div class="hidden sm:block absolute left-0 bottom-2 lg:bottom-32">
+                <div class="lg:-ml-20 -ml-36">
+                    <img src="{{ asset('img/arrow.webp') }}" alt="left-icon" class="w-full">
+                </div>
+            </div>
+            <div class="hidden sm:block absolute -right-10 top-2 lg:top-32">
+                <div class="lg:-ml-20 -ml-36">
+                    <img src="{{ asset('img/arrow.webp') }}" alt="left-icon" class="w-full">
+                </div>
+            </div>
+            <h1 class="mb-4 text-2xl/relaxed font-extrabold tracking-tight md:text-5xl lg:text-6xl">
+                <p class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
+                    Buat Situs Web
+                </p>
+                <span class="px-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Murah & Berkualitas!</span>
+            </h1>
+            <p class="mb-8 text-xl/relaxed font-normal lg:text-xl/10 sm:px-16 lg:px-48">
                 Perkenalkan diri atau bisnis Anda ke seluruh dunia dengan situs web sekarang juga!
             </p>
-            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                    Kenapa Harus Memiliki Situs Web?
-                    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+            <div class="flex items-center justify-center">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="flex flex-row space-x-3 rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-800 focus-visible:ring active:bg-gray-600 md:text-base w-52">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
+                    <span>Hubungi Kami</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="punya-situs-web" class="mx-auto max-w-screen-2xl mb-10 px-4 scroll-mt-24 mt-8">
-        <div class="flex flex-col space-y-3">
-            <h2 class="my-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Ada banyak alasan kenapa Anda harus memiliki situs web!
-            </h2>
-            <div class="flex flex-col md:space-y-3">
-                <ol class="items-center sm:flex">
-                    <x-vertical-timeline title="Meningkatkan Kredibilitas">
-                        Kepercayaan orang atau pelanggan terhadap Anda dan bisnis Anda pastinya meningkat dengan adanya situs web
-                    </x-vertical-timeline>
-
-                    <x-vertical-timeline title="Media Promosi">
-                        Karena situs web dapat diakses oleh semua orang, situs web menjadi cara yang tepat untuk melakukan promosi
-                    </x-vertical-timeline>
-
-                    <x-vertical-timeline title="Menghemat Waktu">
-                        Anda tidak perlu menjelaskan panjang lebar ke konsumen, cukup berikan alamat situs web Anda dan selesai
-                    </x-vertical-timeline>
-
-                    <x-vertical-timeline title="Tampilan Menarik">
-                        Anda atau bisnis Anda akan semakin mudah diingat berkat situs web yang tampilannya bisa diatur sesuai selera
-                    </x-vertical-timeline>
-                </ol>
-
-                <ol class="items-center sm:flex">
-                    <x-vertical-timeline title="Dapat Diakses 24 Jam">
-                        Malam hari tentu waktunya untuk tidur, tapi tidak untuk situs web Anda.
-                    </x-vertical-timeline>
-
-                    <x-vertical-timeline title="Meningkatkan Penjualan">
-                        Dengan berbagai keunggulan promosi yang ditawarkan situs web, penjualan toko offline maupun online menjadi meningkat
-                    </x-vertical-timeline>
-
-                    <x-vertical-timeline title="Meningkatkan Karir">
-                        Seseorang yang memiliki situs web pribadi lebih dilihat oleh rekruter dibandingkan sebaliknya
-                    </x-vertical-timeline>
-                </ol>
-            </div>
-        </div>
-    </section>
-
-    <section id="pilih-kami" class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
+    <section id="pilih-kami" class="mx-auto mb-10 px-4 scroll-mt-24 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
         <div class="flex flex-col space-x-2 pb-5">
             <h2 class="my-6 text-center text-2xl text-white lg:text-3xl xl:mb-12">Kenapa Memilih Kami?
             </h2>
@@ -126,9 +101,7 @@
                             <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
                         </a>
                         <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pengalaman membuat situs web selama 5 tahun!</h5>
-                            </a>
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pengalaman membuat situs web selama 5 tahun!</h5>
                             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Apapun perangkatnya: Smartphone, Tablet, Komputer Desktop, Laptop, Netbook, dan perangkat lainnya yang punya internet dan layar, pastinya bisa mengakses situs Anda!</p>
                             </p>
                         </div>
@@ -197,6 +170,46 @@
                     </div>
                     {{-- end card --}}
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="punya-situs-web" class="mx-auto max-w-screen-2xl mb-10 px-4 scroll-mt-24 mt-8">
+        <div class="flex flex-col space-y-3">
+            <h2 class="my-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Ada banyak alasan kenapa Anda harus memiliki situs web!
+            </h2>
+            <div class="flex flex-col md:space-y-3">
+                <ol class="items-center sm:flex">
+                    <x-vertical-timeline title="Meningkatkan Kredibilitas">
+                        Kepercayaan orang atau pelanggan terhadap Anda dan bisnis Anda pastinya meningkat dengan adanya situs web
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Media Promosi">
+                        Karena situs web dapat diakses oleh semua orang, situs web menjadi cara yang tepat untuk melakukan promosi
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Menghemat Waktu">
+                        Anda tidak perlu menjelaskan panjang lebar ke konsumen, cukup berikan alamat situs web Anda dan selesai
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Tampilan Menarik">
+                        Anda atau bisnis Anda akan semakin mudah diingat berkat situs web yang tampilannya bisa diatur sesuai selera
+                    </x-vertical-timeline>
+                </ol>
+
+                <ol class="items-center sm:flex">
+                    <x-vertical-timeline title="Dapat Diakses 24 Jam">
+                        Malam hari tentu waktunya untuk tidur, tapi tidak untuk situs web Anda.
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Meningkatkan Penjualan">
+                        Dengan berbagai keunggulan promosi yang ditawarkan situs web, penjualan toko offline maupun online menjadi meningkat
+                    </x-vertical-timeline>
+
+                    <x-vertical-timeline title="Meningkatkan Karir">
+                        Seseorang yang memiliki situs web pribadi lebih dilihat oleh rekruter dibandingkan sebaliknya
+                    </x-vertical-timeline>
+                </ol>
             </div>
         </div>
     </section>
@@ -315,7 +328,12 @@
                             </div>
 
                             <div class="mt-auto">
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-orange-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-orange-800 focus-visible:ring active:bg-gray-600 md:text-base">Hubungi Kami</a>
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="flex flex-row space-x-3 items-center justify-center rounded-lg bg-orange-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-orange-800 focus-visible:ring active:bg-gray-600 md:text-base">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    <span>Hubungi Kami</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -330,7 +348,12 @@
             <h2 class="my-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">Tunggu Apa Lagi, Segera Pesan!</h2>
             <p class="text-center">Segera hubungi kami dengan menyentuh tombol di bawah ini</p>
             <div class="flex items-center justify-center">
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-orange-800 focus-visible:ring active:bg-gray-600 md:text-base w-52">Hubungi Kami</a>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="flex flex-row space-x-3 rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-800 focus-visible:ring active:bg-gray-600 md:text-base w-52">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    <span>Hubungi Kami</span>
+                </a>
             </div>
         </div>
     </section>
