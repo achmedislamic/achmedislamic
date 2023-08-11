@@ -4,6 +4,14 @@
     Beranda
 @endsection
 
+@section('meta-description')
+    Web Developer yang berpengalaman selama 4 tahun yang sudah mengerjakan berbagai macam proyek yang siap membuat website untuk anda..
+@endsection
+
+@push('styles')
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+@endpush
+
 @section('nav')
 <nav class="fixed w-full flex justify-between bg-white dark:bg-gray-800 mb-16 border-t-blue-600 border-b-black border-t-8 z-50 backdrop-blur-md bg-white/30 dark:bg-black/30 border-b"
         x-data="{ menu:false }">

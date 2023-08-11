@@ -7,16 +7,15 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ Illuminate\Support\Facades\App::environment('local') == 'local' ? 'LOCAL ' : '' }}@yield('judul') - Achmed Islamic H. | Situs Pribadi</title>
-    <meta name="description"
-        content="Web Developer yang berpengalaman selama 4 tahun yang sudah mengerjakan berbagai macam proyek yang siap membuat website untuk anda.." />
+    <meta name="description" content="@yield('meta-description')" />
+    <meta property="og:description"
+        content="@yield('meta-description')" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://achmedislamic.com/" />
     <meta property="og:locale" content="id_ID" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="@yield('judul') - Achmed Islamic H. | Situs Pribadi" />
-    <meta property="og:description"
-        content="Web Developer yang berpengalaman selama 4 tahun yang sudah mengerjakan berbagai macam proyek yang siap membuat website untuk anda." />
-    <meta property="og:url" content="https://achmedislamic.com/" />
+    <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:site_name" content="Situs Pribadi Achmed Islamic H." />
     <meta property="og:image" content="https://achmedislamic.com/img/favicon.png" />
     <meta property="og:image:width" content="200" />
@@ -29,7 +28,6 @@
 
     <!-- Styles -->
     @vite(['resources/css/app.css'])
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
 
     @livewireStyles
     @stack('styles')

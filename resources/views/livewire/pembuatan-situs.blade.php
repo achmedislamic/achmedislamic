@@ -1,5 +1,9 @@
 @extends('layouts.guest')
 
+@section('meta-description')
+    Buat situs web / website murah & berkualitas sekarang juga! Kami adalah tenaga profesional dari Mataram, Nusa Tenggara Barat siap membantu Anda!
+@endsection
+
 @push('styles')
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=poppins:600|quicksand:400" rel="stylesheet" />
@@ -24,6 +28,16 @@
 @endsection
 
 @section('konten')
+    <a href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah"
+        class="fixed z-20 bottom-5 md:bottom-10 right-4 md:right-8 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <div class="flex flex-row space-x-3 p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <span class="text-white hidden md:inline-block">Hubungi Kami</span>
+        </div>
+    </a>
+
     <nav x-data="{ menu: false }" :class="menu ? '' : 'backdrop-blur-md bg-white/60'" class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://achmedislamic.com/" class="flex items-center">
@@ -44,10 +58,10 @@
                         <a href="#beranda" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Beranda</a>
                     </li>
                     <li>
-                        <a href="#punya-situs-web" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Harus Punya Situs Web?</a>
+                        <a href="#pilih-kami" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Memilih Kami?</a>
                     </li>
                     <li>
-                        <a href="#pilih-kami" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Memilih Kami?</a>
+                        <a href="#punya-situs-web" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Harus Punya Situs Web?</a>
                     </li>
                     <li>
                         <a href="#paket-situs-web" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Paket Situs Web</a>
@@ -63,9 +77,7 @@
                 <img src="{{ asset('img/arrow.webp') }}" alt="left-icon" class="w-full">
             </div>
         </div>
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-36 lg:py-56">
-
-
+        <div class="px-4 mx-auto max-w-screen-xl text-center pt-36 pb-24 lg:py-56">
             <h1 class="mb-4 text-2xl/relaxed font-extrabold tracking-tight md:text-5xl lg:text-6xl">
                 <p class="mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
                     Buat Situs Web
@@ -87,9 +99,9 @@
     </section>
 
     <section id="pilih-kami" class="mx-auto mb-10 px-4 scroll-mt-24 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
-        <div class="max-w-screen-xl mx-auto flex flex-col items-center justify-between space-y-3 md:space-y-0 md:flex-row md:space-x-3 pb-5">
+        <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-between space-y-3 md:space-y-0 md:flex-row md:space-x-3 pb-5">
             <div class="flex flex-col space-y-3">
-                <small class="text-base mt-5">Pengalaman Membuat Situs Web Selama 5 Tahun</small>
+                <small class="text-base mt-5">Solusi Modern, Teknologi Modern, Jangkau Makin Banyak Orang</small>
                 <h3 class="font-bold">
                     <span class="">
                         <p class="text-6xl/[4.5rem] text-white">Ide Anda</p>
@@ -98,29 +110,23 @@
                     </span>
                 </h3>
                 <ul class="max-w-md space-y-1 list-inside dark:text-gray-400 text-white font-bold">
-                    <li class="flex items-center !text[18px]">
+                    <li class="flex items-center text-md">
                         <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                         </svg>
-                        Dapat diakses di semua perangkat
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        Tenaga profesional berpengalaman lebih dari 5 tahun
                     </li>
-                    <li class="flex items-center !text[18px]">
+                    <li class="flex items-center text-md">
                         <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                         </svg>
-                        Tingkatkan bisnis dan karir Anda
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        Garansi situs web bebas masalah hingga 1 tahun
                     </li>
-                    <li class="flex items-center !text[18px]">
+                    <li class="flex items-center text-md">
                         <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                         </svg>
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
                         Harga terjangkau
-                    </li>
-                    <li class="flex items-center !text[18px]">
-                        <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-                         </svg>
-                        Bergaransi hingga 1 tahun
                     </li>
                 </ul>
             </div>
