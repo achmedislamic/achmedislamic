@@ -57,23 +57,20 @@
         </div>
     </nav>
 
-    <section id="beranda" class="bg-gradient-to-r from-slate-100 to-slate-200">
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-            <div class="hidden sm:block absolute left-0 bottom-2 lg:bottom-32">
-                <div class="lg:-ml-20 -ml-36">
-                    <img src="{{ asset('img/arrow.webp') }}" alt="left-icon" class="w-full">
-                </div>
+    <section id="beranda" class="bg-gradient-to-r from-blue-100 to-slate-200">
+        <div class="hidden sm:block absolute left-0 bottom-2 lg:bottom-32">
+            <div class="lg:-ml-20 -ml-36">
+                <img src="{{ asset('img/arrow.webp') }}" alt="left-icon" class="w-full">
             </div>
-            <div class="hidden sm:block absolute -right-10 top-2 lg:top-32">
-                <div class="lg:-ml-20 -ml-36">
-                    <img src="{{ asset('img/arrow.webp') }}" alt="left-icon" class="w-full">
-                </div>
-            </div>
+        </div>
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-36 lg:py-56">
+
+
             <h1 class="mb-4 text-2xl/relaxed font-extrabold tracking-tight md:text-5xl lg:text-6xl">
-                <p class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
+                <p class="mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
                     Buat Situs Web
                 </p>
-                <span class="px-2 bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Murah & Berkualitas!</span>
+                <span class="px-2 text-3xl md:text-5xl lg:text-6xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Murah & Berkualitas!</span>
             </h1>
             <p class="mb-8 text-xl/relaxed font-normal lg:text-xl/10 sm:px-16 lg:px-48">
                 Perkenalkan diri atau bisnis Anda ke seluruh dunia dengan situs web sekarang juga!
@@ -89,88 +86,45 @@
         </div>
     </section>
 
-    <section id="pilih-kami" class="mx-auto mb-10 px-4 scroll-mt-24 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
-        <div class="flex flex-col space-x-2 pb-5">
-            <h2 class="my-6 text-center text-2xl text-white lg:text-3xl xl:mb-12">Kenapa Memilih Kami?
-            </h2>
+    <section id="pilih-kami" class="mx-auto mb-10 px-4 scroll-mt-24 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
+        <div class="max-w-screen-xl mx-auto flex flex-col items-center justify-between space-y-3 md:space-y-0 md:flex-row md:space-x-3 pb-5">
             <div class="flex flex-col space-y-3">
-                <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 items-center justify-center">
-                    {{-- card --}}
-                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pengalaman membuat situs web selama 5 tahun!</h5>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Apapun perangkatnya: Smartphone, Tablet, Komputer Desktop, Laptop, Netbook, dan perangkat lainnya yang punya internet dan layar, pastinya bisa mengakses situs Anda!</p>
-                            </p>
-                        </div>
-                    </div>
-                    {{-- end card --}}
-
-                    {{-- card --}}
-                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Web bisa dibuka di semua perangkat!</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Apapun perangkatnya: Smartphone, Tablet, Komputer Desktop, Laptop, Netbook, dan perangkat lainnya yang punya internet dan layar, pastinya bisa mengakses situs Anda!</p>
-                            </p>
-                        </div>
-                    </div>
-                    {{-- end card --}}
-
-                    {{-- card --}}
-                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Situs Web yang Anda bayar milik Anda sepenuhnya!</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Tidak seperti yang lain, Anda tidak perlu komitmen pembayaran bulanan atau tahunan. Beli sekali, situs web tersebut milik Anda sepenuhnya!</p>
-                            </p>
-                        </div>
-                    </div>
-                    {{-- end card --}}
-                </div>
-
-                <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 items-center justify-center">
-                    {{-- card --}}
-                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Tempat Hosting bisa pilih sendiri, di mulai dari Rp. 12.500 per bulan!</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Hosting berfungsi sebagai tempat Anda menyimpan situs agar bisa diakses orang di seluruh dunia. Tidak seperti yang lain, kami hanya mengambil jasa pembuatan situs saja sehingga harga sangat terjangkau!</p>
-                            </p>
-                        </div>
-                    </div>
-                    {{-- end card --}}
-
-                    {{-- card --}}
-                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                        <a href="#">
-                            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-                        </a>
-                        <div class="p-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Pelayanan 100% hingga situs web bisa diakses seluruh dunia dan bergaransi!</h5>
-                            </a>
-                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Garansi selama 6 bulan untuk situs web standar dan 1 tahun untuk situs web berkebutuhan khusus yang meliputi perbaikan kesalahan maupun konfigurasi hosting!</p>
-                            </p>
-                        </div>
-                    </div>
-                    {{-- end card --}}
-                </div>
+                <small class="text-base mt-5">Pengalaman Membuat Situs Web Selama 5 Tahun</small>
+                <h3 class="font-bold">
+                    <span class="">
+                        <p class="text-6xl/[4.5rem] text-white">Ide Anda</p>
+                        <p class="text-6xl/[4.5rem] text-white">Menjadi Nyata</p>
+                        <p class="text-6xl/[4.5rem] text-white">Dengan Kami</p>
+                    </span>
+                </h3>
+                <ul class="max-w-md space-y-1 list-inside dark:text-gray-400 text-white font-bold">
+                    <li class="flex items-center !text[18px]">
+                        <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                         </svg>
+                        Dapat diakses di semua perangkat
+                    </li>
+                    <li class="flex items-center !text[18px]">
+                        <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                         </svg>
+                        Tingkatkan bisnis dan karir Anda
+                    </li>
+                    <li class="flex items-center !text[18px]">
+                        <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                         </svg>
+                        Harga terjangkau
+                    </li>
+                    <li class="flex items-center !text[18px]">
+                        <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                         </svg>
+                        Bergaransi hingga 1 tahun
+                    </li>
+                </ul>
             </div>
+            <img src="{{ asset('img/development.svg') }}" class="w-96 h-96">
         </div>
     </section>
 
