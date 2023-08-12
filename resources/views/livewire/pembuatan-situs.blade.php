@@ -29,7 +29,7 @@
 
 @section('konten')
     <a href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah"
-        class="fixed z-20 bottom-5 md:bottom-10 right-4 md:right-8 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+       class="fixed z-20 bottom-5 md:bottom-10 right-4 md:right-8 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         <div class="flex flex-row space-x-3 p-1">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -128,6 +128,18 @@
                         </svg>
                         Harga terjangkau
                     </li>
+                    <li class="flex items-center text-md">
+                        <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        Menggunakan perangkat lunak termutakhir
+                    </li>
+                    <li class="flex items-center text-md">
+                        <svg class="w-5 h-5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        100% terima beres dan langsung online!
+                    </li>
                 </ul>
             </div>
             <img src="{{ asset('img/development.svg') }}" class="w-96 h-96">
@@ -170,6 +182,47 @@
                         Seseorang yang memiliki situs web pribadi lebih dilihat oleh rekruter dibandingkan sebaliknya
                     </x-vertical-timeline>
                 </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="mx-auto mb-10 py-5 text-white px-4 scroll-mt-24 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-center space-y-3 md:space-y-0 md:flex-row md:space-x-3 pb-5">
+            <div class="flex place-items-end">
+                <img src="{{ asset('img/development.svg') }}" class="w-96 h-96">
+            </div>
+            <div class="flex flex-col space-y-3">
+                <h3 class="font-bold text-3xl">
+                    <p>Apa Yang Membuat Kami</p>
+                    <p>Berbeda Dengan Yang Lain?</p>
+                </h3>
+                <ul class="max-w-md list-inside dark:text-gray-400 flex flex-col space-y-3">
+                    <li class="flex items-start text-md">
+                        <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <p><span class="font-bold">Tidak ada pembatasan</span> berapa banyak artikel / halaman / produk yang bisa dibuat</p>
+                    </li>
+                    <li class="flex items-start text-md">
+                        <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <p><span class="font-bold">Integrasi</span> Google Analytics dan Google Search Console <span class="font-bold">Gratis!</span></p>
+                    </li>
+                    <li class="flex items-start text-md">
+                        <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <p>Tempat hosting terpercaya dengan <span class="font-bold">biaya mulai dari Rp. 25.000 per bulan.</span> Jika punya Hosting lain yang lebih murah atau punya Hosting sendiri, kami akan tetap membantu meng-online-kan situs Anda!</p>
+                    </li>
+                    <li class="flex items-start text-md">
+                        <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <p><span class="font-bold">Gratis Domain!</span> Silakan tentukan sendiri alamat situs web Anda. Misal: nama-anda-yang-paling-keren.com</p>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </section>
@@ -238,7 +291,7 @@
                             </div>
 
                             <div class="mt-auto">
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:text-gray-700 md:text-base">Rp. 1.200.000 s/d Rp. 2.200.000</a>
+                                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:text-gray-700 md:text-base">Rp. 1.300.000</a>
                             </div>
                         </div>
                     </div>
@@ -303,18 +356,11 @@
         </div>
     </section>
 
-    <section class="mx-auto px-4 scroll-mt-24 mt-8 drop-shadow-lg bg-red-500 text-white">
+    <section class="mx-auto px-4 scroll-mt-24 mt-8 drop-shadow-lg bg-orange-500 text-white">
         <div class="flex flex-col space-y-3 pb-5">
-            <h2 class="my-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">Tunggu Apa Lagi, Segera Pesan!</h2>
-            <p class="text-center">Segera hubungi kami dengan menyentuh tombol di bawah ini</p>
-            <div class="flex items-center justify-center">
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="flex flex-row space-x-3 rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-800 focus-visible:ring active:bg-gray-600 md:text-base w-52">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    <span>Hubungi Kami</span>
-                </a>
-            </div>
+            <h2 class="my-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">Masih Belum Yakin?</h2>
+            <p class="text-center">Berikut situs web yang pernah kami buat!</p>
+
         </div>
     </section>
 @endsection
