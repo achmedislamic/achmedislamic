@@ -89,7 +89,7 @@
                 <span
                       x-data="{
                           startingAnimation: { opacity: 0, scale: 4 },
-                          endingAnimation: { opacity: 1, scale: 1, stagger: 0.07, duration: 0.7, ease: 'expo.out' },
+                          endingAnimation: { opacity: 1, scale: 1, stagger: 0.07, duration: 0.5, ease: 'expo.out' },
                           addCNDScript: true,
                           animateText() {
                               $el.classList.remove('invisible');

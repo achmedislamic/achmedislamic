@@ -113,7 +113,6 @@
                 <strong>Anda butuh website?</strong> Saya bisa menerima proyek anda! Berikut daftar proyek yang bisa
                 saya kerjakan:
             </x-h2>
-            <p class="text-white rounded-md p-3 bg-red-500 mb-3"><strong>Maaf, saat ini saya tidak menerima proyek hingga akhir bulan Juni 2023. Namun jika Anda memiliki keperluan lain, silakan email saya di: achmedislamic[at]outlook.com. Terima kasih atas pengertiannya</strong></p>
             <ul>
                 <x-list-card>
                     <x-slot name="title">Sistem Informasi</x-slot>
