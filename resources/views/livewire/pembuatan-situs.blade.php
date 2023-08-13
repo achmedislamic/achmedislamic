@@ -137,7 +137,7 @@
         </div>
     </section>
 
-    <section id="pilih-kami" class="mx-auto py-8 mb-10 px-4 scroll-mt-24 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
+    <section id="pilih-kami" class="mx-auto py-8 mb-10 px-4 scroll-mt-20 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
         <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-between space-y-3 md:space-y-0 md:flex-row md:space-x-3">
             <div class="flex flex-col space-y-3">
                 <small class="text-base">Solusi Modern, Teknologi Modern, Jangkau Makin Banyak Orang</small>
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section id="punya-situs-web" class="mx-auto max-w-screen-2xl mb-10 px-4 scroll-mt-24 mt-8">
+    <section id="punya-situs-web" class="mx-auto max-w-screen-2xl mb-10 px-4 scroll-mt-20 mt-8">
         <div class="flex flex-col space-y-3">
             <h2 class="my-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Ada banyak alasan kenapa Anda harus memiliki situs web!
             </h2>
@@ -222,7 +222,7 @@
         </div>
     </section>
 
-    <section class="mx-auto mb-10 py-5 text-white px-4 scroll-mt-24 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <section class="mx-auto mb-10 py-5 text-white px-4 scroll-mt-20 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
         <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-center space-y-3 md:space-y-0 md:flex-row md:space-x-3 pb-5">
             <div class="flex place-items-end">
                 <img src="{{ asset('img/marketing.svg') }}" class="w-96 h-96">
@@ -269,7 +269,7 @@
         </div>
     </section>
 
-    <section id="paket-situs-web" class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 text-white">
+    <section id="paket-situs-web" class="mx-auto mb-10 px-4 scroll-mt-20 mt-8 text-white">
         <div class="bg-white py-6 sm:py-8 lg:py-12">
             <div class="mx-auto max-w-screen-xl px-4 md:px-8">
                 <h2 class="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Yuk Pilih Paket Situs Web Anda!</h2>
@@ -392,7 +392,7 @@
         </div>
     </section>
 
-    <section id="paket-hosting" class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 border border-t-slate-300">
+    <section id="paket-hosting" class="mx-auto mb-10 px-4 scroll-mt-20 mt-8 border border-t-slate-300">
         <div class="bg-white py-6 sm:py-8 lg:py-12">
             <div class="mx-auto max-w-screen-xl px-4 md:px-8 flex flex-col space-y-3">
                 <h2 class="text-center text-2xl font-bold text-gray-800 lg:text-3xl">Durasi Hosting Yang Bisa Dipilih!</h2>
@@ -427,7 +427,7 @@
 
                                 <p class="text-center">Paket diperpanjang seharga Rp. 77.000 pada {{ now()->addMonth(12)->translatedFormat('d F Y') }}</p>
 
-                                <p class="text-center mt-4">Harga Hosting selama 12 Bulan = <span class="font-bold">Rp. 924.000</span></p>
+                                <p class="text-center mt-4">Harga Hosting selama 12 Bulan = <span class="font-bold">Rp. 528.000</span></p>
 
                                 <p class="text-center"><span class="font-bold">Gratis Domain 1 Tahun!</span></p>
                             </div>
@@ -479,7 +479,7 @@
         </div>
     </section>
 
-    <section class="mx-auto scroll-mt-24 mt-8 drop-shadow-lg bg-emerald-500 text-white">
+    <section class="mx-auto scroll-mt-20 mt-8 drop-shadow-lg bg-emerald-500 text-white">
         <div class="flex flex-col space-y-3 pb-5">
             <h2 class="mt-4 mb-2 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">Masih Belum Yakin?</h2>
             <p class="text-center">Berikut situs web yang pernah kami buat!</p>
