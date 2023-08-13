@@ -24,7 +24,7 @@
 @endpush
 
 @section('judul')
-    Jasa Pembuatan Situs Web
+    Buat Situs Web Murah & Berkualitas!
 @endsection
 
 @section('konten')
