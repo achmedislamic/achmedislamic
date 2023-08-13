@@ -31,6 +31,11 @@
 
     @livewireStyles
     @stack('styles')
+    <style>
+        [x-cloak] {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="bg-white dark:bg-gray-800">

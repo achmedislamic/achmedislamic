@@ -39,10 +39,10 @@
     </a>
 
     <nav
-        x-data="{ menu: false }" :class="menu ? '' : 'backdrop-blur-md bg-white/60'"
-        @keydown.escape.window="menu = false"
-        @click.outside="menu = false"
-        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+         x-data="{ menu: false }" :class="menu ? '' : 'backdrop-blur-md bg-white/60'"
+         @keydown.escape.window="menu = false"
+         @click.outside="menu = false"
+         class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://achmedislamic.com/" class="flex items-center">
                 <img src="https://achmedislamic.com/img/favicon.png" class="h-8 mr-3" alt="Achmed Islamic Logo">
@@ -59,16 +59,16 @@
             <div :class="menu ? '' : 'hidden'" x-transition x-cloak class="items-center justify-between w-full md:flex md:w-auto md:order-1">
                 <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700">
                     <li>
-                        <a href="#beranda" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Beranda</a>
+                        <a @click="menu = false" href="#beranda" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Beranda</a>
                     </li>
                     <li>
-                        <a href="#pilih-kami" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Memilih Kami?</a>
+                        <a @click="menu = false" href="#pilih-kami" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Memilih Kami?</a>
                     </li>
                     <li>
-                        <a href="#punya-situs-web" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Harus Punya Situs Web?</a>
+                        <a @click="menu = false" href="#punya-situs-web" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Kenapa Harus Punya Situs Web?</a>
                     </li>
                     <li>
-                        <a href="#paket-situs-web" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Paket Situs Web</a>
+                        <a @click="menu = false" href="#paket-situs-web" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Paket Situs Web</a>
                     </li>
                 </ul>
             </div>
@@ -86,7 +86,42 @@
                 <p class="mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl">
                     Buat Situs Web
                 </p>
-                <span class="px-2 text-3xl md:text-5xl lg:text-6xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Murah & Berkualitas!</span>
+                <span
+                      x-data="{
+                          startingAnimation: { opacity: 0, scale: 4 },
+                          endingAnimation: { opacity: 1, scale: 1, stagger: 0.07, duration: 0.7, ease: 'expo.out' },
+                          addCNDScript: true,
+                          animateText() {
+                              $el.classList.remove('invisible');
+                              gsap.fromTo($el.children, this.startingAnimation, this.endingAnimation);
+                          },
+                          splitCharactersIntoSpans(element) {
+                              text = element.innerHTML;
+                              modifiedHTML = [];
+                              for (var i = 0; i < text.length; i++) {
+                                  attributes = '';
+                                  if (text[i].trim()) { attributes = 'class=\'inline-block\''; }
+                                  modifiedHTML.push('<span ' + attributes + '>' + text[i] + '</span>');
+                              }
+                              element.innerHTML = modifiedHTML.join('');
+                          },
+                          addScriptToHead(url) {
+                              script = document.createElement('script');
+                              script.src = url;
+                              document.head.appendChild(script);
+                          }
+                      }"
+                      x-init="splitCharactersIntoSpans($el);
+                      if (addCNDScript) {
+                          addScriptToHead('https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js');
+                      }
+                      gsapInterval = setInterval(function() {
+                          if (typeof gsap !== 'undefined') {
+                              animateText();
+                              clearInterval(gsapInterval);
+                          }
+                      }, 5);"
+                      class="invisible px-2 text-3xl md:text-5xl lg:text-6xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Murah dan Berkualitas!</span>
             </h1>
             <p class="mb-8 text-xl/relaxed font-normal lg:text-xl/10 sm:px-16 lg:px-48">
                 Perkenalkan diri atau bisnis Anda ke seluruh dunia dengan situs web sekarang juga!
@@ -155,37 +190,34 @@
             <h2 class="my-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Ada banyak alasan kenapa Anda harus memiliki situs web!
             </h2>
             <div class="flex flex-col md:space-y-3">
-                <ol class="items-center sm:flex">
-                    <x-vertical-timeline title="Meningkatkan Kredibilitas">
-                        Kepercayaan orang atau pelanggan terhadap Anda dan bisnis Anda pastinya meningkat dengan adanya situs web
-                    </x-vertical-timeline>
-
-                    <x-vertical-timeline title="Media Promosi">
-                        Karena situs web dapat diakses oleh semua orang, situs web menjadi cara yang tepat untuk melakukan promosi
-                    </x-vertical-timeline>
-
-                    <x-vertical-timeline title="Menghemat Waktu">
-                        Anda tidak perlu menjelaskan panjang lebar ke konsumen, cukup berikan alamat situs web Anda dan selesai
-                    </x-vertical-timeline>
-
-                    <x-vertical-timeline title="Tampilan Menarik">
-                        Anda atau bisnis Anda akan semakin mudah diingat berkat situs web yang tampilannya bisa diatur sesuai selera
-                    </x-vertical-timeline>
-                </ol>
 
                 <ol class="items-center sm:flex">
                     <x-vertical-timeline title="Dapat Diakses 24 Jam">
                         Malam hari tentu waktunya untuk tidur, tapi tidak untuk situs web Anda.
                     </x-vertical-timeline>
 
-                    <x-vertical-timeline title="Meningkatkan Penjualan">
-                        Dengan berbagai keunggulan promosi yang ditawarkan situs web, penjualan toko offline maupun online menjadi meningkat
+                    <x-vertical-timeline title="Media Promosi">
+                        Karena situs web dapat diakses oleh semua orang, situs web menjadi cara yang tepat untuk melakukan promosi
                     </x-vertical-timeline>
 
                     <x-vertical-timeline title="Meningkatkan Karir">
                         Seseorang yang memiliki situs web pribadi lebih dilihat oleh rekruter dibandingkan sebaliknya
                     </x-vertical-timeline>
+
                 </ol>
+
+                <ol class="items-center sm:flex">
+                    <x-vertical-timeline title="Meningkatkan Kredibilitas">
+                        Kepercayaan orang atau pelanggan terhadap Anda dan bisnis Anda meningkat dengan adanya situs web
+                    </x-vertical-timeline>
+
+
+                    <x-vertical-timeline title="Meningkatkan Penjualan">
+                        Dengan berbagai keunggulan promosi yang ditawarkan situs web, penjualan toko offline maupun online menjadi meningkat
+                    </x-vertical-timeline>
+
+                </ol>
+
             </div>
         </div>
     </section>
@@ -193,7 +225,7 @@
     <section class="mx-auto mb-10 py-5 text-white px-4 scroll-mt-24 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
         <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-center space-y-3 md:space-y-0 md:flex-row md:space-x-3 pb-5">
             <div class="flex place-items-end">
-                <img src="{{ asset('img/development.svg') }}" class="w-96 h-96">
+                <img src="{{ asset('img/marketing.svg') }}" class="w-96 h-96">
             </div>
             <div class="flex flex-col space-y-3">
                 <h3 class="font-bold text-3xl">
@@ -211,7 +243,7 @@
                         <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg>
-                        <p><span class="font-bold">Integrasi</span>  <a target="_blank" href="https://analytics.google.com/analytics/web/" class="hover:text-gray-300 underline hover:cursor-pointer">Google Analytics</a> dan <a target="_blank" href="https://search.google.com/search-console/about" class="hover:text-gray-300 underline hover:cursor-pointer">Google Search Console</a> <span class="font-bold">Gratis!</span></p>
+                        <p><span class="font-bold">Integrasi</span> <a target="_blank" href="https://analytics.google.com/analytics/web/" class="hover:text-gray-300 underline hover:cursor-pointer">Google Analytics</a> dan <a target="_blank" href="https://search.google.com/search-console/about" class="hover:text-gray-300 underline hover:cursor-pointer">Google Search Console</a> <span class="font-bold">Gratis!</span></p>
                     </li>
                     <li class="flex items-start text-md">
                         <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -251,50 +283,44 @@
                             <div class="mb-12">
                                 <div class="mb-2 text-center text-2xl font-bold text-gray-800">Situs Web Standar</div>
 
-                                <p class="mb-8 px-8 text-center text-black">
+                                <p class="mb-8 px-1 md:px-8 text-center text-black">
                                     Cocok untuk situs web seperti blog pribadi, situs berita, pengenalan bisnis, katalog produk, profil perusahaan, dan semacamnya
                                 </p>
 
                                 <div class="space-y-4">
+
                                     <!-- check - start -->
                                     <div class="flex items-center gap-2">
                                         <x-icons.check />
-                                        <span class="text-black">Membuat konten artikel/produk/barang tanpa batas</span>
+                                        <span class="text-black">Tambah pengguna baru tanpa batas untuk membantu mengelola situs</span>
                                     </div>
                                     <!-- check - end -->
 
                                     <!-- check - start -->
                                     <div class="flex items-center gap-2">
                                         <x-icons.check />
-                                        <span class="text-black">Fitur multi pengguna sehingga Anda bisa mengajak orang lain mengelola situs web Anda</span>
+                                        <span class="text-black">Unggah file apapun dengan mudah</span>
                                     </div>
                                     <!-- check - end -->
 
                                     <!-- check - start -->
                                     <div class="flex items-center gap-2">
                                         <x-icons.check />
-                                        <span class="text-black">Unggah gambar, video, dokumen dan lain-lain dengan mudah</span>
+                                        <span class="text-black">Optimasi Mesin Pencari seperti Google, Yahoo, Bing, dll</span>
                                     </div>
                                     <!-- check - end -->
 
                                     <!-- check - start -->
                                     <div class="flex items-center gap-2">
                                         <x-icons.check />
-                                        <span class="text-black">Teroptimasi agar dapat dicari di mesin pencari seperti Google, Yahoo, Bing, dll</span>
+                                        <span class="text-black">Sangat mudah digunakan dan dikelola!</span>
                                     </div>
                                     <!-- check - end -->
 
                                     <!-- check - start -->
                                     <div class="flex items-center gap-2">
                                         <x-icons.check />
-                                        <span class="text-black">Sangat mudah digunakan dan dikelola serta memiliki sertifikat keamanan!</span>
-                                    </div>
-                                    <!-- check - end -->
-
-                                    <!-- check - start -->
-                                    <div class="flex items-center gap-2">
-                                        <x-icons.check />
-                                        <span class="text-black">Pengerjaan cepat. Hanya butuh waktu 7 hingga 14 hari, situs web dapat Anda akses!</span>
+                                        <span class="text-black">Pengerjaan cepat 7 hingga 14 hari & langsung Online!</span>
                                     </div>
                                     <!-- check - end -->
                                 </div>
@@ -315,36 +341,36 @@
                             <div class="mb-12">
                                 <div class="mb-2 text-center text-2xl font-bold text-gray-800">Situs Web Berkebutuhan Khusus</div>
 
-                                <p class="mx-auto mb-8 px-8 text-center text-black">
-                                    Cocok untuk situs sistem informasi manajemen seperti pengelolaan karyawan, pengelolaan barang/produk, e-commerce, dan lain-lain
+                                <p class="mx-auto mb-8 px-1 md:px-8 text-center text-black">
+                                    Cocok untuk situs sistem informasi manajemen seperti pengelolaan karyawan, pengelolaan barang/produk, e-commerce, dll
                                 </p>
 
                                 <div class="space-y-4">
                                     <!-- check - start -->
                                     <div class="flex items-center gap-2">
                                         <x-icons.check text-color="text-orange-500" />
-                                        <span class="text-black">Situs web yang dibuat akan didesain kasar terlebih dahulu dan diserahkan ke Anda untuk dikonfirmasi</span>
+                                        <span class="text-black">Pembuatan situs <i>Custom</i> dengan teknologi modern</span>
                                     </div>
                                     <!-- check - end -->
 
                                     <!-- check - start -->
                                     <div class="flex items-center gap-2">
                                         <x-icons.check text-color="text-orange-500" />
-                                        <span class="text-black">Akses penuh terhadap situs web, skema pembayaran hanya 1x saja</span>
+                                        <span class="text-black">Proses pengerjaan transparan dan bertahap</span>
                                     </div>
                                     <!-- check - end -->
 
                                     <!-- check - start -->
                                     <div class="flex items-center gap-2">
                                         <x-icons.check text-color="text-orange-500" />
-                                        <span class="text-black">Selain situs web, Anda juga mendapatkan buku panduan yang mudah dimengerti</span>
+                                        <span class="text-black">Mendapatkan buku panduan berbentuk PDF</span>
                                     </div>
                                     <!-- check - end -->
 
                                     <!-- check - start -->
                                     <div class="flex items-center gap-2">
                                         <x-icons.check text-color="text-orange-500" />
-                                        <span class="text-black">Garansi 1 tahun untuk perbaikan situs web selama situs berjalan</span>
+                                        <span class="text-black">Garansi 1 tahun di mulai dari hari pertama Online</span>
                                     </div>
                                     <!-- check - end -->
                                 </div>
@@ -453,11 +479,80 @@
         </div>
     </section>
 
-    <section class="mx-auto px-4 scroll-mt-24 mt-8 drop-shadow-lg bg-orange-500 text-white">
+    <section class="mx-auto scroll-mt-24 mt-8 drop-shadow-lg bg-emerald-500 text-white">
         <div class="flex flex-col space-y-3 pb-5">
-            <h2 class="my-4 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">Masih Belum Yakin?</h2>
+            <h2 class="mt-4 mb-2 text-center text-2xl font-bold md:mb-8 lg:text-3xl xl:mb-12">Masih Belum Yakin?</h2>
             <p class="text-center">Berikut situs web yang pernah kami buat!</p>
+            <div class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-3">
+                <div class="flex flex-col space-y-3">
+                    <img src="{{ asset('img/portofolio/kerja-sama-unram.webp') }}" alt="" loading="lazy">
+                    <p class="text-center"><a href="https://kerjasama.unram.ac.id" target="_blank" class="hover:text-gray-200 hover:underline hover:cursor-pointer">Situs Web Kerja Sama Universitas Mataram</a></p>
+                </div>
 
+                <div class="flex flex-col space-y-3">
+                    <img src="{{ asset('img/portofolio/si-tanak-ntb.webp') }}" alt="" loading="lazy">
+                    <p class="text-center"><a href="https://lalinternak.disnakkeswan.ntbprov.go.id" target="_blank" class="hover:text-gray-200 hover:underline hover:cursor-pointer">Situs Web Lalu Lintas Ternak Provinsi NTB</a></p>
+                </div>
+
+                <div class="flex flex-col space-y-3">
+                    <img src="{{ asset('img/portofolio/windowsku.webp') }}" alt="" loading="lazy">
+                    <p class="text-center"><a href="https://windowsku.com" target="_blank" class="hover:text-gray-200 hover:underline hover:cursor-pointer">Blog Pribadi Windowsku.com</a></p>
+                </div>
+            </div>
+
+            <div class="flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-3">
+                <div class="flex flex-col space-y-3">
+                    <img src="{{ asset('img/portofolio/importer-feeder.webp') }}" alt="" loading="lazy">
+                    <p class="text-center"><a href="https://importer-feeder.unram.ac.id" target="_blank" class="hover:text-gray-200 hover:underline hover:cursor-pointer">Situs Web Importer Feeder Universitas Mataram</a></p>
+                </div>
+
+                <div class="flex flex-col space-y-3">
+                    <img src="{{ asset('img/portofolio/entebeplan-ntb.webp') }}" alt="" loading="lazy">
+                    <p class="text-center"><a href="https://e-planning.ntbprov.go.id" target="_blank" class="hover:text-gray-200 hover:underline hover:cursor-pointer">Situs Web Perencanaan APBD Provinsi NTB</a></p>
+                </div>
+
+                <div class="flex flex-col space-y-3">
+                    <img src="{{ asset('img/portofolio/e-kinerja-ntb.webp') }}" alt="" loading="lazy">
+                    <p class="text-center"><a href="https://e-kinerja.ntbprov.go.id" target="_blank" class="hover:text-gray-200 hover:underline hover:cursor-pointer">Situs Web Penilaian Kinerja Pegawai Provinsi NTB</a></p>
+                </div>
+            </div>
         </div>
     </section>
+
+    @env('local')
+    <section class="relative py-16 bg-white min-w-screen animation-fade animation-delay">
+        <div class="container px-8 mx-auto sm:px-12 xl:px-5">
+            <p class="text-xs font-bold text-left text-pink-500 uppercase sm:mx-6 sm:text-center sm:text-normal sm:font-bold" data-primary="pink-500">
+                Got a Question? We’ve got answers.
+            </p>
+            <h3 class="mt-1 text-2xl font-bold text-left text-gray-800 sm:mx-6 sm:text-3xl md:text-4xl lg:text-5xl sm:text-center">
+                Frequently Asked Questions
+            </h3>
+            <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                <h3 class="text-lg font-bold text-purple-500 sm:text-xl md:text-2xl" data-primary="purple-500">How does it work?</h3>
+                <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
+                    Our platform works with your content to provides insights and metrics on how you can grow your business and scale your infastructure.
+                </p>
+            </div>
+            <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                <h3 class="text-lg font-bold text-purple-500 sm:text-xl md:text-2xl" data-primary="purple-500">Do you offer team pricing?</h3>
+                <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
+                    Yes, we do! Team pricing is available for any plan. You can take advantage of 30% off for signing up for team pricing of 10 users or more.
+                </p>
+            </div>
+            <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                <h3 class="text-lg font-bold text-purple-500 sm:text-xl md:text-2xl" data-primary="purple-500">How do I make changes and configure my site?</h3>
+                <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
+                    You can easily change your site settings inside of your site dashboard by clicking the top right menu and clicking the settings button.
+                </p>
+            </div>
+            <div class="w-full px-6 py-6 mx-auto mt-10 bg-white border border-gray-200 rounded-lg sm:px-8 md:px-12 sm:py-8 sm:shadow lg:w-5/6 xl:w-2/3" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+                <h3 class="text-lg font-bold text-purple-500 sm:text-xl md:text-2xl" data-primary="purple-500">How do I add a custom domain?</h3>
+                <p class="mt-2 text-base text-gray-600 sm:text-lg md:text-normal">
+                    You can easily change your site settings inside of your site dashboard by clicking the top right menu and clicking the settings button.
+                </p>
+            </div>
+        </div>
+    </section>
+    @endenv
 @endsection
