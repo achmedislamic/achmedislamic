@@ -38,7 +38,11 @@
         </div>
     </a>
 
-    <nav x-data="{ menu: false }" :class="menu ? '' : 'backdrop-blur-md bg-white/60'" class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <nav
+        x-data="{ menu: false }" :class="menu ? '' : 'backdrop-blur-md bg-white/60'"
+        @keydown.escape.window="menu = false"
+        @click.outside="menu = false"
+        class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="https://achmedislamic.com/" class="flex items-center">
                 <img src="https://achmedislamic.com/img/favicon.png" class="h-8 mr-3" alt="Achmed Islamic Logo">
@@ -98,10 +102,10 @@
         </div>
     </section>
 
-    <section id="pilih-kami" class="mx-auto mb-10 px-4 scroll-mt-24 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
-        <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-between space-y-3 md:space-y-0 md:flex-row md:space-x-3 pb-5">
+    <section id="pilih-kami" class="mx-auto py-8 mb-10 px-4 scroll-mt-24 bg-gradient-to-b md:bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white drop-shadow-lg">
+        <div class="max-w-screen-lg mx-auto flex flex-col items-center justify-between space-y-3 md:space-y-0 md:flex-row md:space-x-3">
             <div class="flex flex-col space-y-3">
-                <small class="text-base mt-5">Solusi Modern, Teknologi Modern, Jangkau Makin Banyak Orang</small>
+                <small class="text-base">Solusi Modern, Teknologi Modern, Jangkau Makin Banyak Orang</small>
                 <h3 class="font-bold">
                     <span class="">
                         <p class="text-6xl/[4.5rem] text-white">Ide Anda</p>
@@ -201,19 +205,25 @@
                         <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg>
-                        <p><span class="font-bold">Tidak ada pembatasan</span> berapa banyak artikel / halaman / produk yang bisa dibuat</p>
+                        <p><span class="font-bold">Tak ada pembatasan</span> berapa banyak artikel / halaman / produk yang bisa dibuat</p>
                     </li>
                     <li class="flex items-start text-md">
                         <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg>
-                        <p><span class="font-bold">Integrasi</span> Google Analytics dan Google Search Console <span class="font-bold">Gratis!</span></p>
+                        <p><span class="font-bold">Integrasi</span>  <a target="_blank" href="https://analytics.google.com/analytics/web/" class="hover:text-gray-300 underline hover:cursor-pointer">Google Analytics</a> dan <a target="_blank" href="https://search.google.com/search-console/about" class="hover:text-gray-300 underline hover:cursor-pointer">Google Search Console</a> <span class="font-bold">Gratis!</span></p>
                     </li>
                     <li class="flex items-start text-md">
                         <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
                         </svg>
-                        <p>Tempat hosting terpercaya dengan <span class="font-bold">biaya mulai dari Rp. 25.000 per bulan.</span> Jika punya Hosting lain yang lebih murah atau punya Hosting sendiri, kami akan tetap membantu meng-online-kan situs Anda!</p>
+                        <p>Tempat hosting terpercaya dengan <span class="font-bold">biaya mulai dari Rp. 26.400 per bulan.</span></p>
+                    </li>
+                    <li class="flex items-start text-md">
+                        <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z" />
+                        </svg>
+                        <p><span class="font-bold">Tak ada batasan jumlah dokumen dan foto</span> yang bisa diunggah.</p>
                     </li>
                     <li class="flex items-start text-md">
                         <svg class="w-5 h-5 mt-1 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -347,6 +357,93 @@
                                     </svg>
                                     <span>Hubungi Kami</span>
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- plan - end -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paket-hosting" class="mx-auto mb-10 px-4 scroll-mt-24 mt-8 border border-t-slate-300">
+        <div class="bg-white py-6 sm:py-8 lg:py-12">
+            <div class="mx-auto max-w-screen-xl px-4 md:px-8 flex flex-col space-y-3">
+                <h2 class="text-center text-2xl font-bold text-gray-800 lg:text-3xl">Durasi Hosting Yang Bisa Dipilih!</h2>
+                <small class="bg-green-100 text-green-800 text-base font-medium text-center py-0.5 rounded dark:bg-green-900 dark:text-green-300">Semua Harga Sudah Termasuk Pajak!</small>
+
+                <div class="flex flex-col-reverse md:flex-row space-y-8 md:space-y-0 md:space-x-3 justify-center">
+                    <!-- plan - start -->
+                    <div class="w-full md:w-1/2 flex flex-col overflow-hidden rounded-lg border bg-blue-100 hover:bg-blue-200 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
+                        <div class="h-2 bg-blue-500"></div>
+
+                        <div class="flex flex-1 flex-col p-6 pt-8">
+                            <div class="mb-4 flex flex-col space-y-3">
+                                <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">1 Bulan</h3>
+
+                                <p class="text-4xl font-bold text-black text-center">Rp. 122.000 / bulan</p>
+
+                                <p class="text-center">Paket diperpanjang seharga Rp. 143.000 pada {{ now()->addMonth(1)->translatedFormat('d F Y') }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- plan - end -->
+
+                    <!-- plan - start -->
+                    <div class="w-full md:w-1/2 flex flex-col overflow-hidden rounded-lg border bg-emerald-100 hover:bg-emerald-200 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
+                        <div class="h-2 bg-emerald-500"></div>
+
+                        <div class="flex flex-1 flex-col p-6 pt-8">
+                            <div class="mb-4 flex flex-col space-y-3">
+                                <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">12 Bulan (1 Tahun)</h3>
+
+                                <p class="text-4xl font-bold text-black text-center">Rp. 44.000 / bulan</p>
+
+                                <p class="text-center">Paket diperpanjang seharga Rp. 77.000 pada {{ now()->addMonth(12)->translatedFormat('d F Y') }}</p>
+
+                                <p class="text-center mt-4">Harga Hosting selama 12 Bulan = <span class="font-bold">Rp. 924.000</span></p>
+
+                                <p class="text-center"><span class="font-bold">Gratis Domain 1 Tahun!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- plan - end -->
+
+                    <!-- plan - start -->
+                    <div class="w-full md:w-1/2 flex flex-col overflow-hidden rounded-lg border bg-purple-100 hover:bg-purple-200 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
+                        <div class="h-2 bg-purple-500"></div>
+
+                        <div class="flex flex-1 flex-col p-6 pt-8">
+                            <div class="mb-4 flex flex-col space-y-3">
+                                <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">24 Bulan (2 Tahun)</h3>
+
+                                <p class="text-4xl font-bold text-black text-center">Rp. 33.000 / bulan</p>
+
+                                <p class="text-center">Paket diperpanjang seharga Rp. 66.000 pada {{ now()->addMonth(24)->translatedFormat('d F Y') }}</p>
+
+                                <p class="text-center mt-4">Harga Hosting selama 24 Bulan = <span class="font-bold">Rp. 792.000</span></p>
+
+                                <p class="text-center"><span class="font-bold">Gratis Domain 1 Tahun!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- plan - end -->
+
+                    <!-- plan - start -->
+                    <div class="w-full md:w-1/2 flex flex-col overflow-hidden rounded-lg border bg-slate-100 hover:bg-slate-200 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
+                        <div class="h-2 bg-slate-500"></div>
+
+                        <div class="flex flex-1 flex-col p-6 pt-8">
+                            <div class="mb-4 flex flex-col space-y-3">
+                                <h3 class="mb-2 text-center text-2xl font-bold text-gray-800">48 Bulan (4 Tahun)</h3>
+
+                                <p class="text-4xl font-bold text-black text-center">Rp. 26.400 / bulan</p>
+
+                                <p class="text-center">Paket diperpanjang seharga Rp. 55.000 pada {{ now()->addMonth(48)->translatedFormat('d F Y') }}</p>
+
+                                <p class="text-center mt-4">Harga Hosting selama 48 Bulan = <span class="font-bold">Rp. 1.267.200</span></p>
+
+                                <p class="text-center"><span class="font-bold">Gratis Domain 1 Tahun!</span></p>
                             </div>
                         </div>
                     </div>
