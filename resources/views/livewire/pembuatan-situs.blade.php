@@ -121,7 +121,7 @@
                               clearInterval(gsapInterval);
                           }
                       }, 5);"
-                      class="invisible px-2 text-3xl md:text-5xl lg:text-6xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Murah dan Berkualitas!</span>
+                      class="invisible px-2 text-[28px] md:text-5xl lg:text-6xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Murah dan Berkualitas!</span>
             </h1>
             <p class="mb-8 text-xl/relaxed font-normal lg:text-xl/10 sm:px-16 lg:px-48">
                 Perkenalkan diri atau bisnis Anda ke seluruh dunia dengan situs web sekarang juga!
