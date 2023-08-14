@@ -392,6 +392,7 @@
         </div>
     </section>
 
+    @env('local')
     <section id="paket-hosting" class="mx-auto mb-10 px-4 scroll-mt-20 mt-8 border border-t-slate-300">
         <div class="bg-white py-6 sm:py-8 lg:py-12">
             <div class="mx-auto max-w-screen-xl px-4 md:px-8 flex flex-col space-y-3">
@@ -478,6 +479,7 @@
             </div>
         </div>
     </section>
+    @endenv
 
     <section class="mx-auto scroll-mt-20 mt-8 drop-shadow-lg bg-emerald-500 text-white">
         <div class="flex flex-col space-y-3 pb-5">
