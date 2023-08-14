@@ -124,7 +124,7 @@
                       class="invisible px-2 text-[27px] md:text-5xl lg:text-6xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white">Murah dan Berkualitas!</span>
             </h1>
             <p class="mb-8 text-xl/relaxed font-normal lg:text-xl/10 sm:px-16 lg:px-48">
-                Perkenalkan diri atau bisnis Anda ke seluruh dunia dengan situs web sekarang juga!
+                Kenalkan diri dan bisnis Anda ke seluruh dunia sekarang juga!
             </p>
             <div class="flex items-center justify-center">
                 <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="flex flex-row space-x-3 rounded-lg bg-blue-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-800 focus-visible:ring active:bg-gray-600 md:text-base w-52">
