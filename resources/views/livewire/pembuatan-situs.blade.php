@@ -398,7 +398,7 @@
                 <h2 class="text-center text-2xl font-bold text-gray-800 lg:text-3xl">Paket Hosting Yang Dapat Dipilih!</h2>
                 <small class="bg-green-100 text-green-800 text-base font-medium text-center py-0.5 rounded dark:bg-green-900 dark:text-green-300">Semua Harga Sudah Termasuk Pajak!</small>
 
-                <div class="flex flex-col-reverse md:flex-row space-y-8 md:space-y-0 md:space-x-3 justify-center">
+                <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-3 justify-center">
                     <!-- plan - start -->
                     <div class="w-full md:w-1/2 flex flex-col overflow-hidden rounded-lg border bg-blue-100 hover:bg-blue-200 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300">
                         <div class="h-2 bg-blue-500"></div>
