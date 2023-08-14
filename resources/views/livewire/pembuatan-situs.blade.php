@@ -326,8 +326,8 @@
                                 </div>
                             </div>
 
-                            <div class="mt-auto">
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web.%20Deskripsinya%20adalah" class="block rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:text-gray-700 md:text-base">Rp. 1.300.000</a>
+                            <div class="mt-auto flex flex-col space-y-3">
+                                @livewire('kode-diskon')
                             </div>
                         </div>
                     </div>
