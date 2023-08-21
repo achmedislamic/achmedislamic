@@ -15,9 +15,11 @@ final class KodeDiskon extends Component
         $this->validate([
             'kodeDiskon' => 'required|string|max:14'
         ]);
-        
+
+        $this->kodeDiskon = str($this->kodeDiskon)->upper()->toString();
+
         if($this->kodeDiskon == 'SIAP ONLINE' || $this->kodeDiskon == 'siap online'){
-            $this->harga = '<span class="line-through">Rp. 1.300.000</span> Rp. 1.200.000';
+            $this->harga = '<span class="line-through">Rp. 1.300.000</span> Rp. 800.000';
 
             $this->href = 'https://api.whatsapp.com/send?phone=6282230925988&text=Hai!%20Saya%20ingin%20memesan%20situs%20web%20dengan%20kode%20diskon%20SIAP%20ONLINE.%20Deskripsinya%20adalah%20';
 
