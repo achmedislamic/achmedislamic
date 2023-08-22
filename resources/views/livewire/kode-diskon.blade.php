@@ -6,5 +6,10 @@
         </div>
     </form>
 
+    @if (session()->has('error'))
+        <span class="text-red-500 mb-3">{{ session('error') }}</span>
+    @endif
+
     <a target="_blank" href="{!! $href !!}" class="block rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-blue-700 focus-visible:ring active:text-gray-700 md:text-base">{!! $harga !!}</a>
+
 </div>
